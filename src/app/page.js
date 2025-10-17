@@ -7,7 +7,7 @@ const LINKS = [
   { label: "Shows", href: "/shows", color: "green" },
 ];
 
-export default function Home() {
+export default function HomePage() {
   return (
     <div className="w-full h-full">
       <div className="flex flex-col gap-4 fixed top-[50%] left-[50%] translate-[-50%] max-w-[90vw] md:max-w-[33vw]">
