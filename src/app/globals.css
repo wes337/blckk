@@ -35,6 +35,9 @@
   --color-orange-light: #fda200;
   --color-orange: #ea9600;
   --color-orange-dark: #c88000;
+  --color-red-light: #ec2d33;
+  --color-red: #de443b;
+  --color-red-dark: #a61a1f;
 }
 
 body {

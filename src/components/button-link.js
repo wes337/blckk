@@ -12,6 +12,8 @@ export default function ButtonLink({ label, href, color }) {
         return "bg-orange hover:bg-orange-dark active:bg-orange-dark";
       case "green":
         return "bg-green hover:bg-green-dark active:bg-green-dark";
+      case "red":
+        return "bg-red hover:bg-red-dark active:bg-red-dark";
       default:
         return "bg-dark hover:bg-darker active:bg-darker";
     }
@@ -37,7 +39,7 @@ export default function ButtonLink({ label, href, color }) {
       }}
     >
       <div
-        className={`pixel-corners flex w-full items-center justify-center py-2 xl:py-4 uppercase text-3xl text-shadow-[0px_4px_0px_#16232575] ${bg()}`}
+        className={`pixel-corners flex w-full min-w-[48px] items-center justify-center py-2 xl:py-4 uppercase text-3xl text-shadow-[0px_4px_0px_#16232575] ${bg()}`}
       >
         {label}
       </div>
