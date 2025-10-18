@@ -89,7 +89,7 @@ export default function Navigation() {
     >
       <div
         className={`flex flex-col items-center justify-center gap-8 ${
-          home ? "pb-[196px]" : ""
+          home ? "pb-[220px] md:pb-[196px]" : ""
         }`}
       >
         <button

@@ -8,7 +8,6 @@ import { randomNumberBetween } from "@/utils";
 export default function Cards({ children }) {
   const container = useRef();
   const [animating, setAnimating] = useState(false);
-  const [hover, setHover] = useState(null);
 
   useGSAP(
     () => {
