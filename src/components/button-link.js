@@ -20,23 +20,27 @@ export default function ButtonLink({ label, href, color }) {
   return (
     <Link
       key={href}
-      className={`flex w-full items-center justify-center py-2 xl:py-4 uppercase ${bg()} text-3xl text-shadow-[0px_4px_0px_#16232575] shadow-[0px_4px_0px_0px_#162325] rounded-md`}
+      className={`h-full w-full filter-[drop-shadow(0px_6px_0_#00000075)]`}
       href={href}
       onClick={(event) => {
         gsap.fromTo(
           event.target,
           { scale: 1.05 },
-          { scale: 1.1, ease: "elastic" }
+          { scale: 1.1, duration: 0.1, ease: "bounce" }
         );
       }}
       onMouseEnter={(event) => {
-        gsap.to(event.target, { scale: 1.05, ease: "elastic" });
+        gsap.to(event.target, { scale: 1.05, duration: 0.1 });
       }}
       onMouseLeave={(event) => {
-        gsap.to(event.target, { scale: 1, ease: "elastic" });
+        gsap.to(event.target, { scale: 1, duration: 0.1 });
       }}
     >
-      {label}
+      <div
+        className={`pixel-corners flex w-full items-center justify-center py-2 xl:py-4 uppercase text-3xl text-shadow-[0px_4px_0px_#16232575] ${bg()}`}
+      >
+        {label}
+      </div>
     </Link>
   );
 }

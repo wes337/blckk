@@ -103,15 +103,24 @@ export default function Navigation() {
           />
         </button>
         <div
-          className={`links flex w-[75vw] md:w-[33vw] flex-wrap xl:flex-nowrap m-auto md:m-0 items-center justify-between bg-darker p-4 md:p-6 gap-4 rounded-md shadow-[0px_6px_0px_0px_#162325] ${
+          className={`links w-full h-full filter-[drop-shadow(0px_6px_0_#00000095)] pb-[6px] ${
             home ? "pointer-events-auto" : "pointer-events-none"
           }`}
         >
-          {LINKS.map(({ label, href, color }) => {
-            return (
-              <ButtonLink key={href} label={label} color={color} href={href} />
-            );
-          })}
+          <div
+            className={`pixel-corners flex w-[75vw] md:w-[33vw] flex-wrap xl:flex-nowrap m-auto md:m-0 items-center justify-between bg-darker p-4 md:p-6 gap-4`}
+          >
+            {LINKS.map(({ label, href, color }) => {
+              return (
+                <ButtonLink
+                  key={href}
+                  label={label}
+                  color={color}
+                  href={href}
+                />
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>

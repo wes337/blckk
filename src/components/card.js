@@ -66,11 +66,11 @@ export default function Card({ children }) {
       onMouseEnter={onHoverOn}
       onMouseLeave={onHoverOff}
     >
-      <div className="card relative transition-transform duration-500 transform-3d rotate-y-180 rotate-z-0 w-[0px] h-[0px]">
+      <div className="card relative transition-transform duration-500 transform-3d rotate-y-180 rotate-z-0 rotate-x-0 w-[0px] h-[0px]">
         <div className="absolute top-0 left-0 w-full h-full">
           <Image src={`/card-back.png`} width={138} height={186} alt="" />
         </div>
-        <div className="absolute top-0 left-0 w-full h-full backface-hidden bg-[url('/card-front.png')] bg-size-[100%_186px]">
+        <div className="absolute top-0 left-0 w-full h-full backface-hidden bg-[url('/card-front.png')] bg-size-[100%_186px] rotate-x-0">
           <div className="p-1.5">{children}</div>
         </div>
       </div>
