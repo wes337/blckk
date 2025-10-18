@@ -1,4 +1,5 @@
 import Card from "@/components/card";
+import Cards from "@/components/cards";
 
 export default function MerchPage() {
   return (
@@ -6,12 +7,12 @@ export default function MerchPage() {
       <div className="text-2xl text-shadow-[2px_2px_0px_#16232590] uppercase">
         Merch
       </div>
-      <div className="grid grid-cols-2 gap-4 text-darkest text-shadow-[1px_1px_0px_#16232590]">
+      <Cards>
         <Card>Card 1</Card>
         <Card>Card 2</Card>
         <Card>Card 3</Card>
         <Card>Card 4</Card>
-      </div>
+      </Cards>
     </div>
   );
 }

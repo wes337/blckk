@@ -34,7 +34,7 @@ export default function Deck({ amount = 10 }) {
         }
       );
 
-      const cards = gsap.utils.toArray(".card");
+      const cards = gsap.utils.toArray(".deck-card");
 
       cards.forEach((card, index) => {
         gsap.to(card, {
@@ -54,10 +54,12 @@ export default function Deck({ amount = 10 }) {
       className={`w-[143px] h-[186px] fixed top-0 left-0 w-full h-full pointer-events-none fade-in`}
     >
       <div className="deck relative top-[95%] left-[50%] translate-x-[-72.5px] translate-y-[-186px]">
-        {[...Array(amount || 10)].map((_, index) => (
+        {[...Array(amount)].map((_, index) => (
           <div
             key={index}
-            className={`card absolute ${index === 9 ? "" : "brightness-50"}`}
+            className={`deck-card absolute ${
+              index === 9 ? "" : "brightness-50"
+            }`}
             style={{ translate: `${index * 0.5}px ${index * -1}px` }}
           >
             <Image src={`/card-back.png`} alt="" width={138} height={186} />

@@ -1,11 +1,11 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { randomNumberBetween } from "@/utils";
 import ButtonLink from "@/components/button-link";
 
 gsap.registerPlugin(useGSAP);
@@ -18,6 +18,7 @@ const LINKS = [
 
 export default function Navigation() {
   const container = useRef();
+  const router = useRouter();
   const pathname = usePathname();
   const [home, setHome] = useState(pathname === "/");
 
@@ -46,6 +47,35 @@ export default function Navigation() {
     { dependencies: [home], scope: container }
   );
 
+  const onClickLogo = () => {
+    const cards = gsap.utils.toArray(".card");
+
+    if (cards && cards.length > 0) {
+      const tl = gsap.timeline();
+
+      tl.to(cards, {
+        ease: "elastic(1,0.3)",
+        rotateY: 180,
+        stagger: 0.1,
+      });
+
+      tl.to(cards, {
+        ease: "elastic(0.3,1)",
+        width: 0,
+        height: 0,
+        rotateZ: randomNumberBetween(-10, 10),
+        duration: 0.5,
+        stagger: 0.1,
+      });
+
+      tl.play().then(() => {
+        router.push("/");
+      });
+    } else {
+      router.push("/");
+    }
+  };
+
   return (
     <div
       ref={container}
@@ -60,7 +90,10 @@ export default function Navigation() {
           home ? "pb-[196px]" : ""
         }`}
       >
-        <Link className="w-[75vw] md:w-[33vw] pointer-events-auto" href="/">
+        <button
+          className="w-[75vw] md:w-[33vw] cursor-pointer pointer-events-auto"
+          onClick={onClickLogo}
+        >
           <Image
             className="logo w-full h-full drop-shadow-[0_0_8px_#ffffff95]"
             src={`/logo.png`}
@@ -68,7 +101,7 @@ export default function Navigation() {
             height={545}
             alt="BLCKK"
           />
-        </Link>
+        </button>
         <div
           className={`links flex w-[75vw] md:w-[33vw] flex-wrap xl:flex-nowrap m-auto md:m-0 items-center justify-between bg-darker p-4 md:p-6 gap-4 rounded-md shadow-[0px_6px_0px_0px_#162325] ${
             home ? "pointer-events-auto" : "pointer-events-none"
