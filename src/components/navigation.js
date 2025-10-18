@@ -34,6 +34,7 @@ export default function Navigation() {
 
       gsap.to(".logo", {
         scale: home ? 1 : 0.5,
+        duration: 1.8,
         ease: "elastic",
       });
 
