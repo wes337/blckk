@@ -88,7 +88,7 @@ export default function Navigation() {
       } flex items-center justify-center transition-all duration-150 pointer-events-none z-25`}
     >
       <div
-        className={`flex flex-col items-center justify-center gap-8 ${
+        className={`flex flex-col items-center justify-center gap-8 -mt-4 md:mt-0 ${
           home ? "pb-[220px] md:pb-[196px]" : ""
         }`}
       >
