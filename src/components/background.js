@@ -1,7 +1,8 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Renderer, Program, Mesh, Triangle } from "ogl";
+import { usePathname } from "next/navigation";
 
 function hexToVec4(hex) {
   let hexStr = hex.replace("#", "");
@@ -20,6 +21,15 @@ function hexToVec4(hex) {
     a = parseInt(hexStr.slice(6, 8), 16) / 255;
   }
   return [r, g, b, a];
+}
+
+function lerpColor(color1, color2, t) {
+  return [
+    color1[0] + (color2[0] - color1[0]) * t,
+    color1[1] + (color2[1] - color1[1]) * t,
+    color1[2] + (color2[2] - color1[2]) * t,
+    color1[3] + (color2[3] - color1[3]) * t,
+  ];
 }
 
 const vertexShader = `
@@ -108,9 +118,6 @@ export default function Background({
   spinRotation = -2.0,
   spinSpeed = 7.0,
   offset = [0.0, 0.0],
-  color1 = "#DE443B",
-  color2 = "#006BB4",
-  color3 = "#162325",
   contrast = 3.5,
   lighting = 0.4,
   spinAmount = 0.25,
@@ -118,8 +125,50 @@ export default function Background({
   spinEase = 1.0,
   isRotate = false,
   mouseInteraction = true,
+  transitionDuration = 1500,
 }) {
+  const pathname = usePathname();
   const containerRef = useRef(null);
+
+  const [targetColor1, setTargetColor1] = useState("#DE443B");
+  const [targetColor2, setTargetColor2] = useState("#006BB4");
+  const [targetColor3, setTargetColor3] = useState("#162325");
+
+  const currentColorsRef = useRef({
+    color1: hexToVec4("#DE443B"),
+    color2: hexToVec4("#006BB4"),
+    color3: hexToVec4("#162325"),
+  });
+
+  const transitionRef = useRef({
+    startColors: {
+      color1: hexToVec4("#DE443B"),
+      color2: hexToVec4("#006BB4"),
+      color3: hexToVec4("#162325"),
+    },
+    startTime: null,
+    isTransitioning: false,
+  });
+
+  useEffect(() => {
+    if (pathname === "/") {
+      setTargetColor1("#DE443B");
+      setTargetColor2("#006BB4");
+      setTargetColor3("#162325");
+    } else if (pathname === "/shows") {
+      setTargetColor1("#396251ff");
+      setTargetColor2("#459373");
+      setTargetColor3("#459373");
+    } else if (pathname === "/merch") {
+      setTargetColor1("#595b53ff");
+      setTargetColor2("#394f54");
+      setTargetColor3("#162325");
+    } else if (pathname === "/music") {
+      setTargetColor1("#006BB4");
+      setTargetColor2("#5a6b77ff");
+      setTargetColor3("#162325");
+    }
+  }, [pathname]);
 
   useEffect(() => {
     if (!containerRef.current) {
@@ -163,9 +212,9 @@ export default function Background({
         uSpinRotation: { value: spinRotation },
         uSpinSpeed: { value: spinSpeed },
         uOffset: { value: offset },
-        uColor1: { value: hexToVec4(color1) },
-        uColor2: { value: hexToVec4(color2) },
-        uColor3: { value: hexToVec4(color3) },
+        uColor1: { value: currentColorsRef.current.color1 },
+        uColor2: { value: currentColorsRef.current.color2 },
+        uColor3: { value: currentColorsRef.current.color3 },
         uContrast: { value: contrast },
         uLighting: { value: lighting },
         uSpinAmount: { value: spinAmount },
@@ -180,9 +229,72 @@ export default function Background({
 
     let animationFrameId;
 
+    const targetVec1 = hexToVec4(targetColor1);
+    const targetVec2 = hexToVec4(targetColor2);
+    const targetVec3 = hexToVec4(targetColor3);
+
+    const shouldTransition =
+      JSON.stringify(targetVec1) !==
+        JSON.stringify(currentColorsRef.current.color1) ||
+      JSON.stringify(targetVec2) !==
+        JSON.stringify(currentColorsRef.current.color2) ||
+      JSON.stringify(targetVec3) !==
+        JSON.stringify(currentColorsRef.current.color3);
+
+    if (shouldTransition) {
+      transitionRef.current = {
+        startColors: {
+          color1: [...currentColorsRef.current.color1],
+          color2: [...currentColorsRef.current.color2],
+          color3: [...currentColorsRef.current.color3],
+        },
+        startTime: performance.now(),
+        isTransitioning: true,
+      };
+    }
+
     const update = (time) => {
       animationFrameId = requestAnimationFrame(update);
       program.uniforms.iTime.value = time * 0.001;
+
+      if (transitionRef.current.isTransitioning) {
+        const elapsed = time - transitionRef.current.startTime;
+        const progress = Math.min(elapsed / transitionDuration, 1);
+
+        const eased =
+          progress < 0.5
+            ? 2 * progress * progress
+            : 1 - Math.pow(-2 * progress + 2, 2) / 2;
+
+        const targetVec1 = hexToVec4(targetColor1);
+        const targetVec2 = hexToVec4(targetColor2);
+        const targetVec3 = hexToVec4(targetColor3);
+
+        currentColorsRef.current.color1 = lerpColor(
+          transitionRef.current.startColors.color1,
+          targetVec1,
+          eased
+        );
+        currentColorsRef.current.color2 = lerpColor(
+          transitionRef.current.startColors.color2,
+          targetVec2,
+          eased
+        );
+        currentColorsRef.current.color3 = lerpColor(
+          transitionRef.current.startColors.color3,
+          targetVec3,
+          eased
+        );
+
+        program.uniforms.uColor1.value = currentColorsRef.current.color1;
+        program.uniforms.uColor2.value = currentColorsRef.current.color2;
+        program.uniforms.uColor3.value = currentColorsRef.current.color3;
+
+        if (progress >= 1) {
+          transitionRef.current.isTransitioning = false;
+        }
+      }
+
       renderer.render({ scene: mesh });
     };
 
@@ -212,9 +324,9 @@ export default function Background({
     spinRotation,
     spinSpeed,
     offset,
-    color1,
-    color2,
-    color3,
+    targetColor1,
+    targetColor2,
+    targetColor3,
     contrast,
     lighting,
     spinAmount,
@@ -222,6 +334,7 @@ export default function Background({
     spinEase,
     isRotate,
     mouseInteraction,
+    transitionDuration,
     containerRef,
   ]);
 
