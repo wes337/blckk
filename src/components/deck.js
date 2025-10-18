@@ -19,13 +19,13 @@ export default function Deck({ amount = 10 }) {
       gsap.fromTo(
         ".deck",
         {
-          top: pathname === "/" ? "50%" : "95%",
+          top: pathname === "/" ? "50%" : "90%",
           left: pathname === "/" ? "50%" : "50%",
           translateX: pathname === "/" ? "-72.5px" : "-72.5px",
           translateY: pathname === "/" ? "0px" : "-186px",
         },
         {
-          top: pathname === "/" ? "95%" : "50%",
+          top: pathname === "/" ? "90%" : "50%",
           left: pathname === "/" ? "50%" : "50%",
           translateX: pathname === "/" ? "-72.5px" : "-72.5px",
           translateY: pathname === "/" ? "-186px" : "0px",
@@ -53,7 +53,7 @@ export default function Deck({ amount = 10 }) {
       ref={container}
       className={`w-[143px] h-[186px] fixed top-0 left-0 w-full h-full pointer-events-none fade-in`}
     >
-      <div className="deck relative top-[95%] left-[50%] translate-x-[-72.5px] translate-y-[-186px]">
+      <div className="deck relative top-[90%] left-[50%] translate-x-[-72.5px] translate-y-[-186px]">
         {[...Array(amount)].map((_, index) => (
           <div
             key={index}

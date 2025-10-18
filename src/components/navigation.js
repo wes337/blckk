@@ -52,25 +52,26 @@ export default function Navigation() {
     const cards = gsap.utils.toArray(".card");
 
     if (cards && cards.length > 0) {
-      const tl = gsap.timeline();
+      cards.forEach((card, i) => {
+        gsap.to(card, {
+          ease: "bounce",
+          rotateY: 180,
+          delay: i * 0.1,
+        });
 
-      tl.to(cards, {
-        ease: "elastic(1,0.3)",
-        rotateY: 180,
-        stagger: 0.1,
-      });
-
-      tl.to(cards, {
-        ease: "elastic(0.3,1)",
-        width: 0,
-        height: 0,
-        rotateZ: randomNumberBetween(-10, 10),
-        duration: 0.5,
-        stagger: 0.1,
-      });
-
-      tl.play().then(() => {
-        router.push("/");
+        gsap.to(card, {
+          ease: "bounce.in",
+          width: 0,
+          height: 0,
+          rotateZ: randomNumberBetween(-10, 10),
+          duration: 0.5,
+          delay: i * 0.1,
+          onComplete: () => {
+            if (i === cards.length - 1) {
+              router.push("/");
+            }
+          },
+        });
       });
     } else {
       router.push("/");

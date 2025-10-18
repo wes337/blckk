@@ -8,6 +8,7 @@ import { randomNumberBetween } from "@/utils";
 export default function Cards({ children }) {
   const container = useRef();
   const [animating, setAnimating] = useState(false);
+  const [hover, setHover] = useState(null);
 
   useGSAP(
     () => {
@@ -27,9 +28,8 @@ export default function Cards({ children }) {
           {
             width: 138,
             height: 186,
-            ease: "elastic(1,0.3)",
-            rotateZ: randomNumberBetween(-3, 3),
-            duration: 0.75,
+            ease: "bounce.out",
+            duration: 0.5,
             delay: 1 + index * 0.1,
           },
           0
@@ -38,11 +38,11 @@ export default function Cards({ children }) {
         tl.to(
           card,
           {
-            ease: "elastic(1,0.3)",
+            ease: "bounce",
             rotateY: 0,
             rotateZ: randomNumberBetween(-3, 3),
             delay: index * 0.1,
-            duration: 0.01,
+            duration: 0.5,
           },
           "<"
         );

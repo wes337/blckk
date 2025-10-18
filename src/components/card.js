@@ -23,25 +23,19 @@ export default function Card({ children }) {
       rotateZ: 0,
       scale: 1.2,
       ease: "elastic",
-      duration: 0.001,
+      duration: 0.4,
       onComplete: () => setAnimating(false),
     });
   };
 
   const onHoverOff = () => {
-    if (animating || !container.current) {
-      return;
-    }
-
-    setAnimating(true);
-
     const card = container.current.querySelector(".card");
 
     gsap.to(card, {
       rotateZ: randomNumberBetween(-3, 3),
       scale: 1,
       ease: "elastic",
-      duration: 0.001,
+      duration: 0.4,
       onComplete: () => setAnimating(false),
     });
   };
@@ -66,7 +60,7 @@ export default function Card({ children }) {
       onMouseEnter={onHoverOn}
       onMouseLeave={onHoverOff}
     >
-      <div className="card relative transition-transform duration-500 transform-3d rotate-y-180 rotate-z-0 rotate-x-0 w-[0px] h-[0px]">
+      <div className="card relative transform-3d rotate-y-180 rotate-z-0 rotate-x-0 w-[0px] h-[0px]">
         <div className="absolute top-0 left-0 w-full h-full">
           <Image src={`/card-back.png`} width={138} height={186} alt="" />
         </div>
