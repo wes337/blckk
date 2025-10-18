@@ -20,7 +20,7 @@ export default function ButtonLink({ label, href, color }) {
   return (
     <Link
       key={href}
-      className={`flex w-full items-center justify-center py-4 uppercase ${bg()} text-4xl text-shadow-[0px_4px_0px_#16232575] shadow-[0px_4px_0px_0px_#162325] rounded-md`}
+      className={`flex w-full items-center justify-center py-2 xl:py-4 uppercase ${bg()} text-3xl text-shadow-[0px_4px_0px_#16232575] shadow-[0px_4px_0px_0px_#162325] rounded-md`}
       href={href}
       onClick={(event) => {
         gsap.fromTo(

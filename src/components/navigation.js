@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -16,9 +16,14 @@ const LINKS = [
   { label: "Shows", href: "/shows", color: "green" },
 ];
 
-export default function Logo() {
+export default function Navigation() {
   const container = useRef();
   const pathname = usePathname();
+  const [home, setHome] = useState(pathname === "/");
+
+  useEffect(() => {
+    setHome(pathname === "/");
+  }, [pathname]);
 
   useGSAP(
     () => {
@@ -27,32 +32,35 @@ export default function Logo() {
       }
 
       gsap.to(".logo", {
-        scale: pathname === "/" ? 1 : 0.5,
+        scale: home ? 1 : 0.5,
         ease: "elastic",
       });
 
       gsap.to(".links", {
-        translateY: pathname === "/" ? 0 : "-500%",
-        opacity: pathname === "/" ? 1 : 0,
-        pointerEvents: pathname === "/" ? "all" : "none",
+        translateY: home ? 0 : "-500%",
+        opacity: home ? 1 : 0,
         ease: "elastic",
         duration: 1,
       });
     },
-    { dependencies: [pathname], scope: container }
+    { dependencies: [home], scope: container }
   );
 
   return (
     <div
       ref={container}
       className={`fixed ${
-        pathname === "/"
+        home
           ? "top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
           : "top-0 left-[50%] translate-x-[-50%]"
-      } flex items-center justify-center transition-all duration-150`}
+      } flex items-center justify-center transition-all duration-150 pointer-events-none z-25`}
     >
-      <div className={`flex flex-col items-center justify-center gap-4`}>
-        <Link className="w-[75vw] md:w-[33vw]" href="/">
+      <div
+        className={`flex flex-col items-center justify-center gap-8 ${
+          home ? "pb-[196px]" : ""
+        }`}
+      >
+        <Link className="w-[75vw] md:w-[33vw] pointer-events-auto" href="/">
           <Image
             className="logo w-full h-full drop-shadow-[0_0_8px_#ffffff95]"
             src={`/logo.png`}
@@ -62,7 +70,9 @@ export default function Logo() {
           />
         </Link>
         <div
-          className={`links flex w-[75vw] md:w-[33vw] flex-wrap xl:flex-nowrap m-auto md:m-0 items-center justify-between bg-darker p-6 gap-4 rounded-md shadow-[0px_6px_0px_0px_#162325]`}
+          className={`links flex w-[75vw] md:w-[33vw] flex-wrap xl:flex-nowrap m-auto md:m-0 items-center justify-between bg-darker p-4 md:p-6 gap-4 rounded-md shadow-[0px_6px_0px_0px_#162325] ${
+            home ? "pointer-events-auto" : "pointer-events-none"
+          }`}
         >
           {LINKS.map(({ label, href, color }) => {
             return (

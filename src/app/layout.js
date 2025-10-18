@@ -1,4 +1,5 @@
-import Logo from "@/components/logo";
+import Navigation from "@/components/navigation";
+import Deck from "@/components/deck";
 import Background from "@/components/background";
 import "./globals.css";
 
@@ -11,8 +12,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Logo />
+        <Navigation />
         {children}
+        <Deck />
         <Background />
       </body>
     </html>
