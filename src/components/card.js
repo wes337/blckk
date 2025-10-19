@@ -5,7 +5,7 @@ import Image from "next/image";
 import gsap from "gsap";
 import { randomNumberBetween } from "@/utils";
 
-export default function Card({ children }) {
+export default function Card({ children, zIndex }) {
   const container = useRef();
   const [animating, setAnimating] = useState(false);
   const [_touch, setTouch] = useState(false);
@@ -43,7 +43,7 @@ export default function Card({ children }) {
   return (
     <div
       ref={container}
-      className={`flex items-center justify-center w-[138px] h-[186px] p-1 perspective-distant drop-shadow-[2px_4px_1px_#16232590]`}
+      className={`relative flex items-center justify-center w-[138px] h-[186px] p-1 perspective-distant drop-shadow-[4px_4px_0px_#16232595] hover:drop-shadow-[8px_16px_0px_#16232599]`}
       onTouchStart={() => {
         setTouch((touch) => {
           const nextTouch = !touch;
@@ -65,7 +65,7 @@ export default function Card({ children }) {
           <Image src={`/card-back.png`} width={138} height={186} alt="" />
         </div>
         <div className="absolute top-0 left-0 w-full h-full backface-hidden bg-[url('/card-front.png')] bg-size-[100%_186px] rotate-x-0">
-          <div className="p-1.5">{children}</div>
+          <div className="p-1.5 h-full w-full">{children}</div>
         </div>
       </div>
     </div>

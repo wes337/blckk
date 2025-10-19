@@ -5,7 +5,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { randomNumberBetween } from "@/utils";
 
-export default function Cards({ children }) {
+export default function Cards({ columns = 2, children }) {
   const container = useRef();
   const [animating, setAnimating] = useState(false);
 
@@ -54,12 +54,27 @@ export default function Cards({ children }) {
     { dependencies: [], scope: container }
   );
 
+  const cols = () => {
+    switch (columns) {
+      case 5:
+        return "grid-cols-5";
+      case 4:
+        return "grid-cols-4";
+      case 3:
+        return "grid-cols-3";
+      case 2:
+        return "grid-cols-2";
+      default:
+        return "grid-cols-2";
+    }
+  };
+
   return (
     <div
       ref={container}
-      className={`grid grid-cols-2 gap-4 text-darkest text-shadow-[1px_1px_0px_#16232590] ${
+      className={`grid grid-cols-2 xl:grid-cols-3 gap-8 text-darkest text-shadow-[1px_1px_0px_#16232590] ${
         animating ? "pointer-events-none" : "pointer-events-auto"
-      }`}
+      } cursor-pointer`}
       onTouchStart={(event) => {
         if (animating) {
           event.preventDefault();

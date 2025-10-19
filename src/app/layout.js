@@ -1,6 +1,5 @@
 import Navigation from "@/components/navigation";
 import Deck from "@/components/deck";
-import Footer from "@/components/footer";
 import Background from "@/components/background";
 import "./globals.css";
 
@@ -16,7 +15,6 @@ export default function RootLayout({ children }) {
         <Navigation />
         {children}
         <Deck />
-        <Footer />
         <Background />
       </body>
     </html>

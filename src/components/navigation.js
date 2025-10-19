@@ -95,6 +95,7 @@ export default function Navigation() {
           }`}
         >
           <button
+            id="logo"
             className="w-[75vw] md:w-[33vw] cursor-pointer pointer-events-auto"
             onClick={goHome}
           >

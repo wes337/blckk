@@ -1,0 +1,2534 @@
+[
+  {
+    "id": "10yK8c3WnWZPWuDIwacsB4",
+    "name": "OPTICS",
+    "releaseDate": "2025-03-07",
+    "totalTracks": 15,
+    "type": "album",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2731331edeb8b26d821a32d0202",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e021331edeb8b26d821a32d0202",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048511331edeb8b26d821a32d0202",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "41p6hm4wbjWIFlmtREU3Zb",
+        "name": "october.",
+        "trackNumber": 1,
+        "durationMS": 102921
+      },
+      {
+        "id": "6QlOkAk0mXEygwaw1UJqYL",
+        "name": "NOTHING",
+        "trackNumber": 2,
+        "durationMS": 133508
+      },
+      {
+        "id": "5UIgORxqvXg57MyKn8Ev9j",
+        "name": "CARTRIDGE",
+        "trackNumber": 3,
+        "durationMS": 159324
+      },
+      {
+        "id": "4UlCLwoJ1pwWn5TfoAO0gS",
+        "name": "MY CRIB",
+        "trackNumber": 4,
+        "durationMS": 101413
+      },
+      {
+        "id": "3aSsXdubkYcpZ7BPmcguC5",
+        "name": "BEST GORE",
+        "trackNumber": 5,
+        "durationMS": 88731
+      },
+      {
+        "id": "6fhd8gvM66iRBf4p9IseO6",
+        "name": "david's interlude",
+        "trackNumber": 6,
+        "durationMS": 88036
+      },
+      {
+        "id": "5TmGl51vsIR1JadtR4LVCF",
+        "name": "SMOKING KILLS",
+        "trackNumber": 7,
+        "durationMS": 108497
+      },
+      {
+        "id": "3tfseLapgNRXNhY0rOr9aS",
+        "name": "POSTHUMOUS",
+        "trackNumber": 8,
+        "durationMS": 130544
+      },
+      {
+        "id": "2j5w5Z0byHwN3iNlstd2BV",
+        "name": "PLASTIC",
+        "trackNumber": 9,
+        "durationMS": 123441
+      },
+      {
+        "id": "50SeMtdZ4WhPLPk7Q1Iwr8",
+        "name": "OPTICS",
+        "trackNumber": 10,
+        "durationMS": 111364
+      },
+      {
+        "id": "5s85vlSXE7ThGC7R85Bobn",
+        "name": "amend.",
+        "trackNumber": 11,
+        "durationMS": 216482
+      },
+      {
+        "id": "26mnhmAt6DCJDPhN2EraNR",
+        "name": "IDENTITY",
+        "trackNumber": 12,
+        "durationMS": 145723
+      },
+      {
+        "id": "3DzboRuVWvfcCeoTV0ABOq",
+        "name": "crawl.",
+        "trackNumber": 13,
+        "durationMS": 102010
+      },
+      {
+        "id": "4aDveOhluCyVn4PSc3NGxS",
+        "name": "fall.",
+        "trackNumber": 14,
+        "durationMS": 140170
+      },
+      {
+        "id": "7v1acxpxhA7mJMwBTlqIs0",
+        "name": "blur.",
+        "trackNumber": 15,
+        "durationMS": 136620
+      }
+    ]
+  },
+  {
+    "id": "0jIOiIUOxF8luiXSG1K4Hi",
+    "name": "CEMENT",
+    "releaseDate": "2023-07-17",
+    "totalTracks": 12,
+    "type": "album",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273761ec3623731cef41b899d75",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02761ec3623731cef41b899d75",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851761ec3623731cef41b899d75",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "6p8uaFC5jLgSTAmjMzCCoa",
+        "name": "CANTEEN",
+        "trackNumber": 1,
+        "durationMS": 157037
+      },
+      {
+        "id": "788tXYn2JUWfO6u2hUPja8",
+        "name": "DENTAL TAPE",
+        "trackNumber": 2,
+        "durationMS": 144333
+      },
+      {
+        "id": "13DJXM5pKsh6FotBGnHhHT",
+        "name": "Frank's License Plate",
+        "trackNumber": 3,
+        "durationMS": 186443
+      },
+      {
+        "id": "0skIvNfTxINWBwyA1tbQjS",
+        "name": "MONEY MIKE",
+        "trackNumber": 4,
+        "durationMS": 150285
+      },
+      {
+        "id": "5qTMaJxzMbUZkZ26L2U9i3",
+        "name": "lovely day",
+        "trackNumber": 5,
+        "durationMS": 184050
+      },
+      {
+        "id": "7HBuQe2yV2nUdaW91WcRa0",
+        "name": "SKIP ME",
+        "trackNumber": 6,
+        "durationMS": 135254
+      },
+      {
+        "id": "4piWGaF9OQj3ZdKcj2lHT7",
+        "name": "PROTEIN POWDER",
+        "trackNumber": 7,
+        "durationMS": 168844
+      },
+      {
+        "id": "0ZenEkMc4arMUnMY01AXwn",
+        "name": "AMBROSIA",
+        "trackNumber": 8,
+        "durationMS": 150000
+      },
+      {
+        "id": "6d1p5YzbQE1V0p5vxi4OrQ",
+        "name": "SYSTEM",
+        "trackNumber": 9,
+        "durationMS": 168793
+      },
+      {
+        "id": "0GwDoYcc8qFemJUIzIB1dW",
+        "name": "CRICKETS",
+        "trackNumber": 10,
+        "durationMS": 179636
+      },
+      {
+        "id": "0AlzdUrs0VlRa8PDuiJ3GG",
+        "name": "STITCH SWITCH",
+        "trackNumber": 11,
+        "durationMS": 180324
+      },
+      {
+        "id": "4tzlzMnSjjWgvgmxlOBS81",
+        "name": "Track 12",
+        "trackNumber": 12,
+        "durationMS": 109855
+      }
+    ]
+  },
+  {
+    "id": "3SpXwSVB4QVo7sUY8pUiAr",
+    "name": "EIGHTY PROOF (DELUXE)",
+    "releaseDate": "2022-11-01",
+    "totalTracks": 19,
+    "type": "album",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2732324c2ae326239b117b7d031",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e022324c2ae326239b117b7d031",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048512324c2ae326239b117b7d031",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "5up1SHwnotwtCnXUF8BeL5",
+        "name": "CHEAP",
+        "trackNumber": 1,
+        "durationMS": 122143
+      },
+      {
+        "id": "29yH9I07qqRBsJUJxzzGha",
+        "name": "ANTHEM",
+        "trackNumber": 2,
+        "durationMS": 131583
+      },
+      {
+        "id": "25NETWS6ueDS65B7gKCeKx",
+        "name": "SKELETON",
+        "trackNumber": 3,
+        "durationMS": 131225
+      },
+      {
+        "id": "51kmNf2JSU2uSX10LoxerO",
+        "name": "I SHOULD HAVE BEEN IN BROCKHAMPTON",
+        "trackNumber": 4,
+        "durationMS": 123161
+      },
+      {
+        "id": "6Pi7b2CQQe4qKUza4k5Kfq",
+        "name": "SWITCH",
+        "trackNumber": 5,
+        "durationMS": 100899
+      },
+      {
+        "id": "5i4M71vaKLkMjTmqEs723g",
+        "name": "SICK",
+        "trackNumber": 6,
+        "durationMS": 103224
+      },
+      {
+        "id": "0CDwFH4EV4uh3812v0Z86Y",
+        "name": "RED ROOM",
+        "trackNumber": 7,
+        "durationMS": 85503
+      },
+      {
+        "id": "1wGr1WBD7E7IAniOjJdwaU",
+        "name": "call me - interlude",
+        "trackNumber": 8,
+        "durationMS": 108527
+      },
+      {
+        "id": "7fZ9d0Hvvo5UAJYH5hFGzt",
+        "name": "ENERGY",
+        "trackNumber": 9,
+        "durationMS": 104224
+      },
+      {
+        "id": "36c2f5dhHCfp0gWW6xVhwb",
+        "name": "BACKPACK",
+        "trackNumber": 10,
+        "durationMS": 123572
+      },
+      {
+        "id": "11LxKM2aQVv94kwHuNZ7ON",
+        "name": "BUSINESS",
+        "trackNumber": 11,
+        "durationMS": 86085
+      },
+      {
+        "id": "43op61L55u0b3i7nQi44Zp",
+        "name": "THREAT",
+        "trackNumber": 12,
+        "durationMS": 97776
+      },
+      {
+        "id": "7dCPPqPWCxYEAd3t0QgSQl",
+        "name": "EIGHTY PROOF",
+        "trackNumber": 13,
+        "durationMS": 109790
+      },
+      {
+        "id": "7DPoQvyqftE9klBFsJwDFJ",
+        "name": "recovery - outro",
+        "trackNumber": 14,
+        "durationMS": 166290
+      },
+      {
+        "id": "5gjr0eETO2TZoi9bMHH8C6",
+        "name": "GOD WILLING",
+        "trackNumber": 15,
+        "durationMS": 118290
+      },
+      {
+        "id": "5qSK9x88ovtKIHxw1mDp9K",
+        "name": "LABEL PRINT",
+        "trackNumber": 16,
+        "durationMS": 111433
+      },
+      {
+        "id": "7clxb1yyLmPM9RowtuhUnb",
+        "name": "THREE SIX FIVE",
+        "trackNumber": 17,
+        "durationMS": 115484
+      },
+      {
+        "id": "3xxCtKUUzM0f7cDzRnlKSh",
+        "name": "PUSH",
+        "trackNumber": 18,
+        "durationMS": 147908
+      },
+      {
+        "id": "7dM2tTOT2G9R2xM4JBrIMt",
+        "name": "WALKING THE DOG",
+        "trackNumber": 19,
+        "durationMS": 104804
+      }
+    ]
+  },
+  {
+    "id": "41Lx4xTSfbx5xRplTOsmzP",
+    "name": "EIGHTY PROOF",
+    "releaseDate": "2022-10-31",
+    "totalTracks": 14,
+    "type": "album",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273ca8af40efb557880eaf70c37",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02ca8af40efb557880eaf70c37",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851ca8af40efb557880eaf70c37",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "3sf2sn30zxaKY54GyzmQTh",
+        "name": "CHEAP",
+        "trackNumber": 1,
+        "durationMS": 122143
+      },
+      {
+        "id": "6uED6uqPI5FyTS8TQEzaDn",
+        "name": "ANTHEM",
+        "trackNumber": 2,
+        "durationMS": 131583
+      },
+      {
+        "id": "6Rqp5JDOTxvB1E6k0R7w2c",
+        "name": "SKELETON",
+        "trackNumber": 3,
+        "durationMS": 131225
+      },
+      {
+        "id": "68TtPep6FlwpqwmQbu4bLt",
+        "name": "I SHOULD HAVE BEEN IN BROCKHAMPTON",
+        "trackNumber": 4,
+        "durationMS": 123161
+      },
+      {
+        "id": "3ts9tkHzrPVYRi3vyPVKhQ",
+        "name": "SWITCH",
+        "trackNumber": 5,
+        "durationMS": 100899
+      },
+      {
+        "id": "16yhKPQpqlB7gJni3J1hA4",
+        "name": "SICK",
+        "trackNumber": 6,
+        "durationMS": 103224
+      },
+      {
+        "id": "2hFBEX0EIrbaQPhqKg4UjM",
+        "name": "RED ROOM",
+        "trackNumber": 7,
+        "durationMS": 85503
+      },
+      {
+        "id": "7KhoyDYzeRVhG8qf5tRQmR",
+        "name": "call me (interlude)",
+        "trackNumber": 8,
+        "durationMS": 108527
+      },
+      {
+        "id": "77FulBcW3Mrvh7HrMbmh7r",
+        "name": "ENERGY",
+        "trackNumber": 9,
+        "durationMS": 104224
+      },
+      {
+        "id": "2JPXzZRjqz647bhoDtYkGw",
+        "name": "BACKPACK",
+        "trackNumber": 10,
+        "durationMS": 123572
+      },
+      {
+        "id": "47VYUsHy6ITB7WBfhteIfN",
+        "name": "BUSINESS",
+        "trackNumber": 11,
+        "durationMS": 86085
+      },
+      {
+        "id": "6zbR29qfbSZo25zUdX81gD",
+        "name": "THREAT",
+        "trackNumber": 12,
+        "durationMS": 97776
+      },
+      {
+        "id": "0j2C756PhO66KMmlDa3cKt",
+        "name": "EIGHTY PROOF",
+        "trackNumber": 13,
+        "durationMS": 109790
+      },
+      {
+        "id": "4eOlvstDIHGwbSZDmDeTpU",
+        "name": "recovery (outro)",
+        "trackNumber": 14,
+        "durationMS": 166290
+      }
+    ]
+  },
+  {
+    "id": "08VfN0jUfH1pfy7IqAK3jP",
+    "name": "22101",
+    "releaseDate": "2020-07-29",
+    "totalTracks": 12,
+    "type": "album",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273667fabc81c1f77baebef8f64",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02667fabc81c1f77baebef8f64",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851667fabc81c1f77baebef8f64",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "7iSiiqC94Bp2f5l6RH8p6I",
+        "name": "SOBER",
+        "trackNumber": 1,
+        "durationMS": 93854
+      },
+      {
+        "id": "1zyijD36zg64DZQeGoud3s",
+        "name": "HELLCAT",
+        "trackNumber": 2,
+        "durationMS": 138685
+      },
+      {
+        "id": "5j21af9sYpcfqEJodYACMA",
+        "name": "GRAVE",
+        "trackNumber": 3,
+        "durationMS": 122206
+      },
+      {
+        "id": "16BmJsXVio9Ye0IlJcZ0wL",
+        "name": "ALL BLACK",
+        "trackNumber": 4,
+        "durationMS": 129604
+      },
+      {
+        "id": "5flQiHqFGJaueejqFuS3Z8",
+        "name": "ACTIVE",
+        "trackNumber": 5,
+        "durationMS": 141394
+      },
+      {
+        "id": "3e8J1T7wfTKVwuv1N2SvML",
+        "name": "IF HE DIE I DID IT",
+        "trackNumber": 6,
+        "durationMS": 136562
+      },
+      {
+        "id": "72sQ7TBO9Dp7xErUiYapb6",
+        "name": "NEED 2",
+        "trackNumber": 7,
+        "durationMS": 113471
+      },
+      {
+        "id": "7m39ns4eRZTnk5Px19UKwW",
+        "name": "SELF HARM (feat. Biv)",
+        "trackNumber": 8,
+        "durationMS": 121364
+      },
+      {
+        "id": "4xoilLovQCSqJPHHGCP8zW",
+        "name": "CYA",
+        "trackNumber": 9,
+        "durationMS": 104812
+      },
+      {
+        "id": "6G5kNvmO8z35hUDyHF8SAE",
+        "name": "BLEED",
+        "trackNumber": 10,
+        "durationMS": 88084
+      },
+      {
+        "id": "5kAKEdgpGEDx94jVOYMDh3",
+        "name": "XXX (feat. BRUHMANEGOD)",
+        "trackNumber": 11,
+        "durationMS": 150667
+      },
+      {
+        "id": "3MEyIzQs9dXfZrL8gmUwFd",
+        "name": "DIRT",
+        "trackNumber": 12,
+        "durationMS": 129886
+      }
+    ]
+  },
+  {
+    "id": "3ufQUoQvMc5N23TzwYcdsA",
+    "name": "KINO",
+    "releaseDate": "2020-04-23",
+    "totalTracks": 10,
+    "type": "album",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2738853c7e39ed29698e2988ce3",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e028853c7e39ed29698e2988ce3",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048518853c7e39ed29698e2988ce3",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "2cmUrpJW45ByKKps08vumu",
+        "name": "01_REVIEW",
+        "trackNumber": 1,
+        "durationMS": 60004
+      },
+      {
+        "id": "1WiAO1XMT5JMVO57hKKLL4",
+        "name": "SPINE",
+        "trackNumber": 2,
+        "durationMS": 93987
+      },
+      {
+        "id": "2Axqi1ZpxIR3CXQe5mQOeg",
+        "name": "SCRAP",
+        "trackNumber": 3,
+        "durationMS": 143125
+      },
+      {
+        "id": "3ubyes5QSKcxan7fXBh5uM",
+        "name": "HOP OUT",
+        "trackNumber": 4,
+        "durationMS": 170666
+      },
+      {
+        "id": "6CAeGy9dQvK5VE42luNfFK",
+        "name": "READ A BOOK",
+        "trackNumber": 5,
+        "durationMS": 104566
+      },
+      {
+        "id": "7ehLjj4en9MO4GgBylLf1x",
+        "name": "MICHAEL JACKSON",
+        "trackNumber": 6,
+        "durationMS": 96022
+      },
+      {
+        "id": "6aP8FDThnnGwJ0PrqG9XMu",
+        "name": "KINO",
+        "trackNumber": 7,
+        "durationMS": 108186
+      },
+      {
+        "id": "258GPN8WrnxfUdyRgfOnKo",
+        "name": "PLAYING WITH FIRE",
+        "trackNumber": 8,
+        "durationMS": 91507
+      },
+      {
+        "id": "5BnVPZF53dPO8zngO9HPag",
+        "name": "DEAD RAT",
+        "trackNumber": 9,
+        "durationMS": 74716
+      },
+      {
+        "id": "6y3n22jma21iEtTlqjyW1Y",
+        "name": "FLEM",
+        "trackNumber": 10,
+        "durationMS": 100312
+      }
+    ]
+  },
+  {
+    "id": "5OD9H9bCo9RxLMBzJ8w1dE",
+    "name": "ACT I",
+    "releaseDate": "2020-02-06",
+    "totalTracks": 11,
+    "type": "album",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2731e80b799798d9ea7c24bb49a",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e021e80b799798d9ea7c24bb49a",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048511e80b799798d9ea7c24bb49a",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "3qdThRtlp5fGHOfTHe2e1A",
+        "name": "JERSEY DEVIL",
+        "trackNumber": 1,
+        "durationMS": 138750
+      },
+      {
+        "id": "4hBtZYaIOshXpOkuyXLLcT",
+        "name": "CASKET",
+        "trackNumber": 2,
+        "durationMS": 67384
+      },
+      {
+        "id": "0ZKyAgeZg0cgVsmqUAYbuR",
+        "name": "THERAPY",
+        "trackNumber": 3,
+        "durationMS": 143119
+      },
+      {
+        "id": "2fErLip5Pn44rhDrXJx608",
+        "name": "I WANNA SHOOT MY FRIENDS",
+        "trackNumber": 4,
+        "durationMS": 114970
+      },
+      {
+        "id": "0mWTjWFpVdbrCugfj6YwDn",
+        "name": "WHAT IF KENNY BEATS SOLD CRACK",
+        "trackNumber": 5,
+        "durationMS": 92441
+      },
+      {
+        "id": "2jSWN00XhsDBShVbyAYQiq",
+        "name": "PRESS!",
+        "trackNumber": 6,
+        "durationMS": 84000
+      },
+      {
+        "id": "74YKwsBq9FobOtkNOplKHQ",
+        "name": "I CAN'T",
+        "trackNumber": 7,
+        "durationMS": 129244
+      },
+      {
+        "id": "706tumBjzOMqfkNWAdmlqL",
+        "name": "4 BASE",
+        "trackNumber": 8,
+        "durationMS": 121887
+      },
+      {
+        "id": "2KE8C6liARCGEwFqsxFQCh",
+        "name": "WRECK",
+        "trackNumber": 9,
+        "durationMS": 96024
+      },
+      {
+        "id": "7Ie7t2VVXTbomuwiq4djon",
+        "name": "SPRING",
+        "trackNumber": 10,
+        "durationMS": 91977
+      },
+      {
+        "id": "0KUDWWwFelkaMfpVyKPVTy",
+        "name": "I MADE THIS BEFORE I LEFT YOU",
+        "trackNumber": 11,
+        "durationMS": 148363
+      }
+    ]
+  },
+  {
+    "id": "3xNb9DwAsJANEfacqNPBFu",
+    "name": "BUDDY",
+    "releaseDate": "2025-06-27",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273cb19e676ff6cb52b31088fda",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02cb19e676ff6cb52b31088fda",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851cb19e676ff6cb52b31088fda",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "5LpYlo5tNPRR4548rGXZkY",
+        "name": "BUDDY",
+        "trackNumber": 1,
+        "durationMS": 140593
+      }
+    ]
+  },
+  {
+    "id": "4qHSLfUbPa5ebtZ9BOaCTq",
+    "name": "DANNY TOWERS",
+    "releaseDate": "2025-05-30",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273a0f1f9aff927f3956068cc00",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02a0f1f9aff927f3956068cc00",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851a0f1f9aff927f3956068cc00",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "0w3N4AJQ8obLqqwt4juoqG",
+        "name": "DANNY TOWERS",
+        "trackNumber": 1,
+        "durationMS": 118053
+      }
+    ]
+  },
+  {
+    "id": "2Puy3ko4VlfP99Mb98Sb9V",
+    "name": "Babayaga",
+    "releaseDate": "2025-05-23",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273bdff65cb5b4c6d32830deb6b",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02bdff65cb5b4c6d32830deb6b",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851bdff65cb5b4c6d32830deb6b",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "5yDyIDjNMp1JgNktjn8e8w",
+        "name": "Babayaga",
+        "trackNumber": 1,
+        "durationMS": 120033
+      }
+    ]
+  },
+  {
+    "id": "4JL66xYRS0Lixf0f0z0Tf2",
+    "name": "r.n.",
+    "releaseDate": "2025-05-02",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273021978f6a0c49f6178394c13",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02021978f6a0c49f6178394c13",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851021978f6a0c49f6178394c13",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "3qU0zFBII8Er5lU0JJ41xr",
+        "name": "r.n.",
+        "trackNumber": 1,
+        "durationMS": 141539
+      }
+    ]
+  },
+  {
+    "id": "6kfvKS1TNG7bnqR2rRr9pV",
+    "name": "WTFG!",
+    "releaseDate": "2025-03-21",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273b87fe78addcc78b98ee9e1ed",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02b87fe78addcc78b98ee9e1ed",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851b87fe78addcc78b98ee9e1ed",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "7kMFqDbwdxt6XMKGF2uyL6",
+        "name": "WTFG!",
+        "trackNumber": 1,
+        "durationMS": 164022
+      }
+    ]
+  },
+  {
+    "id": "7fjwT3L4kOw1OootPCMp7F",
+    "name": "MY CRIB",
+    "releaseDate": "2025-02-21",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2730436c8d334a64a91baa3ed93",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e020436c8d334a64a91baa3ed93",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048510436c8d334a64a91baa3ed93",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "2WOAPb089OObvuvjgdrNmq",
+        "name": "MY CRIB",
+        "trackNumber": 1,
+        "durationMS": 101413
+      }
+    ]
+  },
+  {
+    "id": "2WWtyqRhSMd6kwgr4Ngb5M",
+    "name": "SMOKING KILLS",
+    "releaseDate": "2025-02-07",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273770ef5c40ec6fe969b2efaae",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02770ef5c40ec6fe969b2efaae",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851770ef5c40ec6fe969b2efaae",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "6Z448GbtvKUSWkTEWNjMIE",
+        "name": "SMOKING KILLS",
+        "trackNumber": 1,
+        "durationMS": 108497
+      }
+    ]
+  },
+  {
+    "id": "4rJZhEBkvS8VXjAERBYC5Z",
+    "name": "DOUBLE CASPER",
+    "releaseDate": "2025-01-10",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273418ab21da6b283e98bdbfd10",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02418ab21da6b283e98bdbfd10",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851418ab21da6b283e98bdbfd10",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "5AX8uqu46X6y0XHBOxQadR",
+        "name": "DOUBLE CASPER",
+        "trackNumber": 1,
+        "durationMS": 115808
+      }
+    ]
+  },
+  {
+    "id": "4p5VI9UMpQWskIwu7EXirn",
+    "name": "SHATTER",
+    "releaseDate": "2024-11-22",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b27313b99b7f0b6f9ee5c3be2a89",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e0213b99b7f0b6f9ee5c3be2a89",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000485113b99b7f0b6f9ee5c3be2a89",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "0xIqZfByraKAkhW1eI8ISF",
+        "name": "SHATTER",
+        "trackNumber": 1,
+        "durationMS": 127672
+      }
+    ]
+  },
+  {
+    "id": "12N2UMkNooEdNobKpzDhaF",
+    "name": "GHOST",
+    "releaseDate": "2024-10-25",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273829d524f4841cd4ff450f0a0",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02829d524f4841cd4ff450f0a0",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851829d524f4841cd4ff450f0a0",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "4kLLFBlYMcKB4j4IF3STAA",
+        "name": "GHOST",
+        "trackNumber": 1,
+        "durationMS": 124369
+      }
+    ]
+  },
+  {
+    "id": "18sZ1Im2VlyUbNV3Tyf1UY",
+    "name": "TEXAS",
+    "releaseDate": "2024-09-20",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273bbec59cae7ac45891f0efa8c",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02bbec59cae7ac45891f0efa8c",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851bbec59cae7ac45891f0efa8c",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "0QopPRlaCmrL6wa3ebtLYs",
+        "name": "TEXAS",
+        "trackNumber": 1,
+        "durationMS": 156723
+      }
+    ]
+  },
+  {
+    "id": "0oQrdvFIiCSGVtL7yzSKmF",
+    "name": "TWO FIFTY",
+    "releaseDate": "2024-09-06",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2736e9d6d743bed5cfecdf94dfe",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e026e9d6d743bed5cfecdf94dfe",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048516e9d6d743bed5cfecdf94dfe",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "3dkSZBEdidxPAnK9y3d9b6",
+        "name": "TWO FIFTY",
+        "trackNumber": 1,
+        "durationMS": 151250
+      }
+    ]
+  },
+  {
+    "id": "7vGSqdJqEqRb8cRxnsiwf3",
+    "name": "BLUEPRINT",
+    "releaseDate": "2024-08-23",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273552decc1c122b7aa0d1c1a74",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02552decc1c122b7aa0d1c1a74",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851552decc1c122b7aa0d1c1a74",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "77Y0jbBGeTDHFqsB4GysW5",
+        "name": "BLUEPRINT",
+        "trackNumber": 1,
+        "durationMS": 135614
+      }
+    ]
+  },
+  {
+    "id": "6p9p38iFUgL3sDr7RmIvGd",
+    "name": "WOLF",
+    "releaseDate": "2024-07-19",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273ca2e633efe5c5b38a52ce1c6",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02ca2e633efe5c5b38a52ce1c6",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851ca2e633efe5c5b38a52ce1c6",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "5tAUJd8Wi934W1qR2sngFx",
+        "name": "WOLF",
+        "trackNumber": 1,
+        "durationMS": 121106
+      }
+    ]
+  },
+  {
+    "id": "7unaIx0o2NjAVcK0uzRqla",
+    "name": "TALK TO GOD",
+    "releaseDate": "2024-06-21",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b27313ce71a867da616d3e28be80",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e0213ce71a867da616d3e28be80",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000485113ce71a867da616d3e28be80",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "6lBFDDAnnAZXc9jG0NaGsp",
+        "name": "TALK TO GOD",
+        "trackNumber": 1,
+        "durationMS": 141229
+      }
+    ]
+  },
+  {
+    "id": "04rM2SvIqhs8ueB2iu1BhL",
+    "name": "WOAH",
+    "releaseDate": "2024-05-24",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273761cb17354219425441b2637",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02761cb17354219425441b2637",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851761cb17354219425441b2637",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "1xrHjVuW5j9UsAggwJOwFy",
+        "name": "WOAH",
+        "trackNumber": 1,
+        "durationMS": 126882
+      }
+    ]
+  },
+  {
+    "id": "72rgVAM7ReCObKxpyYHoJD",
+    "name": "die tomorrow",
+    "releaseDate": "2024-04-15",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b27323ccc47da03e37c182a27d83",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e0223ccc47da03e37c182a27d83",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000485123ccc47da03e37c182a27d83",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "4iZl8UVMg4xBsl5tWd5LXu",
+        "name": "die tomorrow",
+        "trackNumber": 1,
+        "durationMS": 151800
+      }
+    ]
+  },
+  {
+    "id": "3qb2cwQyF4qsH8dwg5ZNsC",
+    "name": "Off Day",
+    "releaseDate": "2024-04-08",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273ff29bb8f9fa34bd62736306a",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02ff29bb8f9fa34bd62736306a",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851ff29bb8f9fa34bd62736306a",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "3Q9KRLDxfEbaWkHKw6yJnM",
+        "name": "Off Day",
+        "trackNumber": 1,
+        "durationMS": 193042
+      }
+    ]
+  },
+  {
+    "id": "7pFtCFHWdla9nrBwlO24eH",
+    "name": "PRIDE",
+    "releaseDate": "2024-03-15",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2731fe46f006ae8c1e97775d3e0",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e021fe46f006ae8c1e97775d3e0",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048511fe46f006ae8c1e97775d3e0",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "1A6YMcAZsnIPgK66uQEgB2",
+        "name": "PRIDE",
+        "trackNumber": 1,
+        "durationMS": 218708
+      }
+    ]
+  },
+  {
+    "id": "6W4VauChsYrqMm4fnAy9hE",
+    "name": "OLD FRIENDS",
+    "releaseDate": "2024-02-19",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2738aa869e76687a4ea5fa269b6",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e028aa869e76687a4ea5fa269b6",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048518aa869e76687a4ea5fa269b6",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "2GoFCQFyjPvEtQ5ltLbLL0",
+        "name": "OLD FRIENDS",
+        "trackNumber": 1,
+        "durationMS": 147253
+      }
+    ]
+  },
+  {
+    "id": "3qrXnJSsKgX5aQgqYhHiNn",
+    "name": "MATTE BLACK COFFIN",
+    "releaseDate": "2024-01-29",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2738225872c0a8fe564404b987f",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e028225872c0a8fe564404b987f",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048518225872c0a8fe564404b987f",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "5HQnzrwshUUIgL37QEwSj2",
+        "name": "MATTE BLACK COFFIN",
+        "trackNumber": 1,
+        "durationMS": 156084
+      }
+    ]
+  },
+  {
+    "id": "0Hnj5NfQfGyIZrPw839KsK",
+    "name": "SOUR",
+    "releaseDate": "2024-01-15",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273beffc5fc8dc2f6c237f20bcd",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02beffc5fc8dc2f6c237f20bcd",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851beffc5fc8dc2f6c237f20bcd",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "06j622ElfyGugHW4vTsVeY",
+        "name": "SOUR",
+        "trackNumber": 1,
+        "durationMS": 147644
+      }
+    ]
+  },
+  {
+    "id": "3Nc7BY7x61gLty0hhfQOkZ",
+    "name": "PACIFIST",
+    "releaseDate": "2023-12-21",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273b0481bb6f2c25a54f84d464e",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02b0481bb6f2c25a54f84d464e",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851b0481bb6f2c25a54f84d464e",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "7L12tLu4iiPoRSaNlaLmnI",
+        "name": "PACIFIST",
+        "trackNumber": 1,
+        "durationMS": 87035
+      }
+    ]
+  },
+  {
+    "id": "4ZGF6PvifbDRlixebHspes",
+    "name": "KEVLAR",
+    "releaseDate": "2023-11-07",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2736cff11ea643b6fd98b5c3446",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e026cff11ea643b6fd98b5c3446",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048516cff11ea643b6fd98b5c3446",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "4KRwVzNF7cLUJiZSRwGaVf",
+        "name": "KEVLAR",
+        "trackNumber": 1,
+        "durationMS": 73503
+      }
+    ]
+  },
+  {
+    "id": "3yzvUWoVFOV9oT3NX1eN69",
+    "name": "NICOTINE",
+    "releaseDate": "2023-10-24",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b27341e9fe2604acc673afd481ea",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e0241e9fe2604acc673afd481ea",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000485141e9fe2604acc673afd481ea",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "5hkOj0p5giWOslvFWOilVj",
+        "name": "NICOTINE",
+        "trackNumber": 1,
+        "durationMS": 141805
+      }
+    ]
+  },
+  {
+    "id": "7gUYAvwMLPgDHwAjrYjLkR",
+    "name": "it always ends this way",
+    "releaseDate": "2023-10-04",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2733483ff345366d81ebf8ad147",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e023483ff345366d81ebf8ad147",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048513483ff345366d81ebf8ad147",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "6kWzAmFbv4zfZfzoxNtiNj",
+        "name": "it always ends this way",
+        "trackNumber": 1,
+        "durationMS": 142581
+      }
+    ]
+  },
+  {
+    "id": "2SDJZgxg3EZmIB66Z2JKFF",
+    "name": "BUG",
+    "releaseDate": "2023-09-26",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273f80d05af8527568de1146948",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02f80d05af8527568de1146948",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851f80d05af8527568de1146948",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "4j1i1CG7VQQwzp40qTzw7X",
+        "name": "BUG",
+        "trackNumber": 1,
+        "durationMS": 134637
+      }
+    ]
+  },
+  {
+    "id": "6sasgQeouahocFBvZpNUNC",
+    "name": "HUMVEE",
+    "releaseDate": "2023-08-07",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b27375ec0599fb6eec3817cfca71",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e0275ec0599fb6eec3817cfca71",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000485175ec0599fb6eec3817cfca71",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "4983qAsBMzl7V1hA8eDQ1l",
+        "name": "HUMVEE",
+        "trackNumber": 1,
+        "durationMS": 132390
+      }
+    ]
+  },
+  {
+    "id": "46tbTFtze6cXFk8yggA00D",
+    "name": "TOO BAD",
+    "releaseDate": "2023-07-05",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273478bb1cd8f38f6f1c95b13c9",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02478bb1cd8f38f6f1c95b13c9",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851478bb1cd8f38f6f1c95b13c9",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "0CY1uaehrynX9Ludp26KmO",
+        "name": "TOO BAD",
+        "trackNumber": 1,
+        "durationMS": 121901
+      }
+    ]
+  },
+  {
+    "id": "6DeqciaZNE7a9qBdEpMd4Z",
+    "name": "SUPER HERO",
+    "releaseDate": "2023-06-17",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b27305c9c43ea9cb67cc7f044b14",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e0205c9c43ea9cb67cc7f044b14",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000485105c9c43ea9cb67cc7f044b14",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "5OXapDmXC5dElz3yy6aSBO",
+        "name": "SUPER HERO",
+        "trackNumber": 1,
+        "durationMS": 129563
+      }
+    ]
+  },
+  {
+    "id": "43erv0pAph2Owt6ZjDHry0",
+    "name": "internet",
+    "releaseDate": "2023-05-01",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b27372fba71b2d5cf18cbd6dd2f7",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e0272fba71b2d5cf18cbd6dd2f7",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000485172fba71b2d5cf18cbd6dd2f7",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "6bESi3HGdhlapCvsG1vhL7",
+        "name": "internet",
+        "trackNumber": 1,
+        "durationMS": 126003
+      }
+    ]
+  },
+  {
+    "id": "5tZDNCMWqEs5OarWxz82bu",
+    "name": "EVERY RAPPER ON EARTH COULD DIE RIGHT NOW AND NOTHING WOULD CHANGE",
+    "releaseDate": "2023-04-07",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b27375114ea1a6b5baf4297f5f09",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e0275114ea1a6b5baf4297f5f09",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000485175114ea1a6b5baf4297f5f09",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "6cDDXOlaFt7GBpHIeSwS3m",
+        "name": "EVERY RAPPER ON EARTH COULD DIE RIGHT NOW AND NOTHING WOULD CHANGE",
+        "trackNumber": 1,
+        "durationMS": 134624
+      }
+    ]
+  },
+  {
+    "id": "3cRq2TdGO6gnrrMM60ZWRH",
+    "name": "I CAN CATCH A BULLET WITH MY FRONT TEETH",
+    "releaseDate": "2023-03-22",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2734d75019c3de22f2d107aeb8f",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e024d75019c3de22f2d107aeb8f",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048514d75019c3de22f2d107aeb8f",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "6QiulanS4rUIXRM4uw3aA0",
+        "name": "I CAN CATCH A BULLET WITH MY FRONT TEETH",
+        "trackNumber": 1,
+        "durationMS": 144549
+      }
+    ]
+  },
+  {
+    "id": "4Kkt6MYAmzkvh7ds1UFYAd",
+    "name": "MIKE TYSON",
+    "releaseDate": "2023-01-09",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2733437b7f53aeb94b4ebddc664",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e023437b7f53aeb94b4ebddc664",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048513437b7f53aeb94b4ebddc664",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "7MOhn6iWvvKg2LZDyybj8T",
+        "name": "MIKE TYSON",
+        "trackNumber": 1,
+        "durationMS": 99603
+      }
+    ]
+  },
+  {
+    "id": "6RVUKeSiCCCAUZPhUdzKgT",
+    "name": "DIE ON PURPOSE",
+    "releaseDate": "2023-01-02",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273ec18ebed5d6a81e7f3c8be54",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02ec18ebed5d6a81e7f3c8be54",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851ec18ebed5d6a81e7f3c8be54",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "5IvSTybISLEOAmfUsbucJw",
+        "name": "DIE ON PURPOSE",
+        "trackNumber": 1,
+        "durationMS": 73850
+      }
+    ]
+  },
+  {
+    "id": "7Gl95UZpKVws65VqCcLssk",
+    "name": "CURTIS",
+    "releaseDate": "2022-12-16",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273e12959d6e1472e01e8b0fd00",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02e12959d6e1472e01e8b0fd00",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851e12959d6e1472e01e8b0fd00",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "4RQimHDdHcUH7bbEd3xcMM",
+        "name": "CURTIS",
+        "trackNumber": 1,
+        "durationMS": 126870
+      }
+    ]
+  },
+  {
+    "id": "74neptXd4bwyvRsYEL74JJ",
+    "name": "ANTHEM",
+    "releaseDate": "2022-10-20",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273bdd45624549bed6484ca606c",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02bdd45624549bed6484ca606c",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851bdd45624549bed6484ca606c",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "5PJ5ZNnsCQ3ZiyoaF9F52K",
+        "name": "ANTHEM",
+        "trackNumber": 1,
+        "durationMS": 131583
+      }
+    ]
+  },
+  {
+    "id": "61m71HzfNcCEAs8saRyY86",
+    "name": "CRV",
+    "releaseDate": "2022-02-04",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273c4d1793169e4e9beeeac7c83",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02c4d1793169e4e9beeeac7c83",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851c4d1793169e4e9beeeac7c83",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "6N9HiX8sFOPtPykLcGxbGD",
+        "name": "CRV",
+        "trackNumber": 1,
+        "durationMS": 136096
+      }
+    ]
+  },
+  {
+    "id": "6osXmAexT5hijeHWgWL41n",
+    "name": "LIGHTS OUT",
+    "releaseDate": "2021-12-12",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2738a577bf21d4e64e95d832a37",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e028a577bf21d4e64e95d832a37",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048518a577bf21d4e64e95d832a37",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "3gJNplxvHSlTsay0KNmBwa",
+        "name": "LIGHTS OUT",
+        "trackNumber": 1,
+        "durationMS": 135003
+      }
+    ]
+  },
+  {
+    "id": "2LaPUoZKKYkwislj8LLixk",
+    "name": "FLIP",
+    "releaseDate": "2021-09-25",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2736508f6beff1b82193cf794d8",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e026508f6beff1b82193cf794d8",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048516508f6beff1b82193cf794d8",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "7up2jNvVZGIeC60JYOQy1t",
+        "name": "FLIP",
+        "trackNumber": 1,
+        "durationMS": 267762
+      }
+    ]
+  },
+  {
+    "id": "0hMxaW3h4ewuX9fKMWP4SN",
+    "name": "BLACK NAILS",
+    "releaseDate": "2021-08-08",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2732f6b48f3f69b36562f139414",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e022f6b48f3f69b36562f139414",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048512f6b48f3f69b36562f139414",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "4WAwcyMEkpJAFH7Y3jlJuG",
+        "name": "BLACK NAILS",
+        "trackNumber": 1,
+        "durationMS": 90725
+      }
+    ]
+  },
+  {
+    "id": "0NlL9idf0WO5L9OqsmlJgQ",
+    "name": "YELLING FIRE IN A MOVIE THEATER",
+    "releaseDate": "2021-06-30",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b27367dc500bb61d3e2602528613",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e0267dc500bb61d3e2602528613",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000485167dc500bb61d3e2602528613",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "7E6861hJfn1ImJA0qdyCV7",
+        "name": "YELLING FIRE IN A MOVIE THEATER",
+        "trackNumber": 1,
+        "durationMS": 138008
+      }
+    ]
+  },
+  {
+    "id": "5yz7S5aVKxztgCTklKU9Gx",
+    "name": "TENT CITY",
+    "releaseDate": "2021-05-22",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b27334d1c46074281714cfa8911b",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e0234d1c46074281714cfa8911b",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000485134d1c46074281714cfa8911b",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "1sjwiTQiwXQl6hN4muJO1f",
+        "name": "TENT CITY",
+        "trackNumber": 1,
+        "durationMS": 167779
+      }
+    ]
+  },
+  {
+    "id": "4v5IHhyTjgJM5ZTxvP5kB4",
+    "name": "BACK SEAT",
+    "releaseDate": "2021-05-01",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273cf3592f82b566bbe6323dd10",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02cf3592f82b566bbe6323dd10",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851cf3592f82b566bbe6323dd10",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "3En5BqfvevGrJ6q7bZ5AsD",
+        "name": "BACK SEAT",
+        "trackNumber": 1,
+        "durationMS": 125375
+      }
+    ]
+  },
+  {
+    "id": "0TNINiYlCWJesDoeWO2xAz",
+    "name": "SUICIDE IS BADASS",
+    "releaseDate": "2021-03-26",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273338bf15ab4aa63240270f827",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02338bf15ab4aa63240270f827",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851338bf15ab4aa63240270f827",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "0w57QRIhKVumZh3FMt4zlb",
+        "name": "SUICIDE IS BADASS",
+        "trackNumber": 1,
+        "durationMS": 227338
+      }
+    ]
+  },
+  {
+    "id": "7zXEflQGuYpkltK5NPCCyH",
+    "name": "THNX",
+    "releaseDate": "2021-02-20",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2732ea05d2205daa351d3067181",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e022ea05d2205daa351d3067181",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048512ea05d2205daa351d3067181",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "13pjTeUBjpRzWfrYarBb6y",
+        "name": "THNX",
+        "trackNumber": 1,
+        "durationMS": 129347
+      }
+    ]
+  },
+  {
+    "id": "72F2LLfjANVgBBbeO0J8Kp",
+    "name": "ANYTIME U MISS ME",
+    "releaseDate": "2021-01-28",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273ce4eed0f0fd3dbd4a9da95f8",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02ce4eed0f0fd3dbd4a9da95f8",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851ce4eed0f0fd3dbd4a9da95f8",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "5aTDJaiwlgjgXc3Uri5s1u",
+        "name": "ANYTIME U MISS ME",
+        "trackNumber": 1,
+        "durationMS": 133413
+      }
+    ]
+  },
+  {
+    "id": "5AvDmj4lgACyvmcS0IzHzB",
+    "name": "ON 10",
+    "releaseDate": "2021-01-16",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b27370ecc290d1454d24e2eda381",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e0270ecc290d1454d24e2eda381",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000485170ecc290d1454d24e2eda381",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "5CbwJN86wdI7pQu8u2jGF9",
+        "name": "ON 10",
+        "trackNumber": 1,
+        "durationMS": 90616
+      }
+    ]
+  },
+  {
+    "id": "6xBkz2KW5mzUslAAbT0VbC",
+    "name": "ASH",
+    "releaseDate": "2020-11-20",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273a66294747848e5ac7d6e888c",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02a66294747848e5ac7d6e888c",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851a66294747848e5ac7d6e888c",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "1PVYzRK7CSkfNs6GyGNT27",
+        "name": "ASH",
+        "trackNumber": 1,
+        "durationMS": 133402
+      }
+    ]
+  },
+  {
+    "id": "4CllK2gCjPiy2x9H825yj7",
+    "name": "BLOOD ROT",
+    "releaseDate": "2020-11-01",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273ea7b372733f13a2fbe17d2e0",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02ea7b372733f13a2fbe17d2e0",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851ea7b372733f13a2fbe17d2e0",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "2JgfUtIGztuQqMYXNGt2BI",
+        "name": "BLOOD ROT",
+        "trackNumber": 1,
+        "durationMS": 111007
+      }
+    ]
+  },
+  {
+    "id": "5Nt0Me9uv7efJNc3hamYRs",
+    "name": ":(",
+    "releaseDate": "2020-10-10",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273cc11f0313f86fc74bc957980",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02cc11f0313f86fc74bc957980",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851cc11f0313f86fc74bc957980",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "4PngI2g03ec44qxFXYPMn3",
+        "name": ":(",
+        "trackNumber": 1,
+        "durationMS": 167980
+      }
+    ]
+  },
+  {
+    "id": "1STsEobhWOPLzqRD3zotd4",
+    "name": "I'M NOT FINE",
+    "releaseDate": "2020-09-19",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b27394fb480685f606dba7be7b44",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e0294fb480685f606dba7be7b44",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000485194fb480685f606dba7be7b44",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "6ZDPYTAmO15Ctq8U0xbfF2",
+        "name": "I'M NOT FINE",
+        "trackNumber": 1,
+        "durationMS": 151566
+      }
+    ]
+  },
+  {
+    "id": "60DGcT7INWaMvRgAWIQKHe",
+    "name": "WAIT",
+    "releaseDate": "2020-08-28",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b2736f8f1f104b3a3838e8de0fc4",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e026f8f1f104b3a3838e8de0fc4",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d000048516f8f1f104b3a3838e8de0fc4",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "1Hz4QTF9QZwUbPiaSL3goU",
+        "name": "WAIT",
+        "trackNumber": 1,
+        "durationMS": 98217
+      }
+    ]
+  },
+  {
+    "id": "3h1e4ryqpGEr6EWrlO6ilN",
+    "name": "ALL THAT I HEAR",
+    "releaseDate": "2020-06-28",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b27314f72b6d4d77c3edc930072b",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e0214f72b6d4d77c3edc930072b",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000485114f72b6d4d77c3edc930072b",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "6WkwffZQ1nF0wnRKog8Xgs",
+        "name": "ALL THAT I HEAR",
+        "trackNumber": 1,
+        "durationMS": 99235
+      }
+    ]
+  },
+  {
+    "id": "51i7tQ4UtzTz49cX4bxeQe",
+    "name": "EAT A FUCKING HOLLOW TIP PIG",
+    "releaseDate": "2020-05-31",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b273dbc74fae2ff155b8b4428a71",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e02dbc74fae2ff155b8b4428a71",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00004851dbc74fae2ff155b8b4428a71",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "2CRWSUU8XtMcgpplBjq5RS",
+        "name": "EAT A FUCKING HOLLOW TIP PIG",
+        "trackNumber": 1,
+        "durationMS": 94588
+      }
+    ]
+  },
+  {
+    "id": "3XcvXHkYlCeyl4oxYXShoL",
+    "name": "BAD LUCK",
+    "releaseDate": "2020-03-27",
+    "totalTracks": 1,
+    "type": "single",
+    "images": [
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000b27318dcd6b981725969dddaa9d3",
+        "height": 640,
+        "width": 640
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d00001e0218dcd6b981725969dddaa9d3",
+        "height": 300,
+        "width": 300
+      },
+      {
+        "url": "https://i.scdn.co/image/ab67616d0000485118dcd6b981725969dddaa9d3",
+        "height": 64,
+        "width": 64
+      }
+    ],
+    "tracks": [
+      {
+        "id": "469gKXYlcqyBnQva4tNStL",
+        "name": "BAD LUCK",
+        "trackNumber": 1,
+        "durationMS": 177409
+      }
+    ]
+  }
+]

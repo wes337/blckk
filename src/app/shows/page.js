@@ -1,5 +1,6 @@
 import Card from "@/components/card";
 import Cards from "@/components/cards";
+import Footer from "@/components/footer";
 
 export default function ShowsPage() {
   return (
@@ -12,7 +13,12 @@ export default function ShowsPage() {
         <Card>Card 2</Card>
         <Card>Card 3</Card>
         <Card>Card 4</Card>
+        <Card>Card 5</Card>
+        <Card>Card 6</Card>
       </Cards>
+      <div className="absolute bottom-0">
+        <Footer />
+      </div>
     </div>
   );
 }
