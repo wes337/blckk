@@ -5,6 +5,11 @@
   src: url("/balatro.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: "alagard";
+  src: url("/alagard.ttf") format("truetype");
+}
+
 :root {
   --background: #4f6367;
   --foreground: #ffffff;
@@ -14,6 +19,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: "balatro", sans-serif;
+  --font-cards: "alagard", sans-serif;
   --color-*: initial;
   --color-white: #ffffff;
   --color-black: #000000;

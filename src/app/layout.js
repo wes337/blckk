@@ -1,6 +1,7 @@
 import Navigation from "@/components/navigation";
 import Deck from "@/components/deck";
 import Background from "@/components/background";
+import Socials from "@/components/socials";
 import "./globals.css";
 
 export const metadata = {
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
         <Navigation />
         {children}
         <Deck />
+        <Socials />
         <Background />
       </body>
     </html>

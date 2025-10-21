@@ -55,24 +55,17 @@ export default function Cards({ columns = 2, children }) {
   );
 
   const cols = () => {
-    switch (columns) {
-      case 5:
-        return "grid-cols-5";
-      case 4:
-        return "grid-cols-4";
-      case 3:
-        return "grid-cols-3";
-      case 2:
-        return "grid-cols-2";
-      default:
-        return "grid-cols-2";
+    if (columns === 1) {
+      return "grid-cols-1";
     }
+
+    return "grid-cols-2";
   };
 
   return (
     <div
       ref={container}
-      className={`grid grid-cols-2 xl:grid-cols-3 gap-8 text-darkest text-shadow-[1px_1px_0px_#16232590] ${
+      className={`grid ${cols()} gap-8 text-darkest text-shadow-[1px_1px_0px_#16232590] ${
         animating ? "pointer-events-none" : "pointer-events-auto"
       } cursor-pointer`}
       onTouchStart={(event) => {

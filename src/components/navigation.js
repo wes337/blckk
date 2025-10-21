@@ -8,6 +8,7 @@ import { useGSAP } from "@gsap/react";
 import { randomNumberBetween } from "@/utils";
 import ButtonLink from "@/components/button-link";
 import { createPortal } from "react-dom";
+import Box from "./box";
 
 gsap.registerPlugin(useGSAP);
 
@@ -23,34 +24,20 @@ export default function Navigation() {
   const pathname = usePathname();
   const [home, setHome] = useState(pathname === "/");
 
-  useEffect(() => {
-    setHome(pathname === "/");
-  }, [pathname]);
-
-  useGSAP(
-    () => {
-      if (typeof window === "undefined") {
-        return;
-      }
-
-      gsap.to(".logo", {
-        scale: home ? 1 : 0.5,
-        duration: 1.8,
-        ease: "elastic",
-      });
-
-      gsap.to(".links", {
-        translateY: home ? 0 : "-500%",
-        opacity: home ? 1 : 0,
-        ease: "elastic",
-        duration: 1,
-      });
-    },
-    { dependencies: [home], scope: container }
-  );
-
   const goHome = () => {
     const cards = gsap.utils.toArray(".card");
+
+    const shopSign = document.querySelector(".shop-sign");
+
+    if (shopSign) {
+      gsap.fromTo(
+        shopSign,
+        {
+          translateY: "0%",
+        },
+        { translateY: "-1000%", ease: "back.inOut", duration: 1 }
+      );
+    }
 
     if (cards && cards.length > 0) {
       cards.forEach((card, i) => {
@@ -78,6 +65,40 @@ export default function Navigation() {
       router.push("/");
     }
   };
+
+  useEffect(() => {
+    setHome(pathname === "/");
+  }, [pathname]);
+
+  useEffect(() => {
+    document.addEventListener("goHome", goHome);
+
+    return () => {
+      document.removeEventListener("goHome", goHome);
+    };
+  }, [goHome]);
+
+  useGSAP(
+    () => {
+      if (typeof window === "undefined") {
+        return;
+      }
+
+      gsap.to(".logo", {
+        scale: home ? 1 : 0.5,
+        duration: 1.8,
+        ease: "elastic",
+      });
+
+      gsap.to(".links", {
+        translateY: home ? 0 : "-500%",
+        opacity: home ? 1 : 0,
+        ease: "elastic",
+        duration: 1,
+      });
+    },
+    { dependencies: [home], scope: container }
+  );
 
   return (
     <>
@@ -108,12 +129,12 @@ export default function Navigation() {
             />
           </button>
           <div
-            className={`links w-full h-full filter-[drop-shadow(0px_6px_0_#00000095)] pb-[6px] ${
+            className={`links w-full h-full ${
               home ? "pointer-events-auto" : "pointer-events-none"
             }`}
           >
-            <div
-              className={`pixel-corners flex w-[75vw] md:w-[33vw] flex-wrap xl:flex-nowrap m-auto md:m-0 items-center justify-between bg-darker p-4 md:p-6 gap-4`}
+            <Box
+              className={`flex w-[75vw] md:w-[33vw] flex-wrap xl:flex-nowrap m-auto md:m-0 items-center justify-between gap-4`}
             >
               {LINKS.map(({ label, href, color }) => {
                 return (
@@ -125,7 +146,7 @@ export default function Navigation() {
                   />
                 );
               })}
-            </div>
+            </Box>
           </div>
         </div>
       </div>
