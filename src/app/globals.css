@@ -119,3 +119,7 @@ body:after {
     0px 8px
   );
 }
+
+input::placeholder {
+  height: 28px;
+}

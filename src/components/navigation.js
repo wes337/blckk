@@ -28,7 +28,6 @@ export default function Navigation() {
     const cards = gsap.utils.toArray(".card");
 
     const shopSign = document.querySelector(".shop-sign");
-
     if (shopSign) {
       gsap.fromTo(
         shopSign,
@@ -36,6 +35,17 @@ export default function Navigation() {
           translateY: "0%",
         },
         { translateY: "-1000%", ease: "back.inOut", duration: 1 }
+      );
+    }
+
+    const form = document.querySelector(".form");
+    if (form) {
+      gsap.fromTo(
+        form,
+        {
+          translateY: "0%",
+        },
+        { translateY: "1000%", ease: "back.inOut", duration: 1 }
       );
     }
 

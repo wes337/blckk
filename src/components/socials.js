@@ -6,7 +6,7 @@ import { gsap } from "gsap";
 
 export default function Socials() {
   return (
-    <div className="fixed bottom-0 right-0 m-4">
+    <div className="fixed bottom-0 right-0 m-4 pb-[6px] z-10">
       <Link
         className="w-[56px] h-[56px] md:w-[64px] md:h-[64px] flex filter-[drop-shadow(0px_6px_0_#00000075)]"
         href={"https://www.instagram.com/blc_kk/"}
