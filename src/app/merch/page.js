@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import Cards from "@/components/cards";
 import Footer from "@/components/footer";
 import ShopSign from "@/components/shop-sign";
@@ -9,7 +10,7 @@ const products = await Shopify.getProducts();
 
 export default function MerchPage() {
   return (
-    <>
+    <Suspense>
       <div className="fixed top-0 left-0 w-full h-full flex flex-col gap-8 items-center justify-center z-10">
         <ShopSign />
         <Cards>
@@ -22,6 +23,6 @@ export default function MerchPage() {
         </div>
       </div>
       <ProductView />
-    </>
+    </Suspense>
   );
 }
