@@ -25,6 +25,8 @@ export default function Navigation() {
   const [home, setHome] = useState(pathname === "/");
 
   const goHome = () => {
+    window.history.replaceState(null, "", pathname);
+
     const cards = gsap.utils.toArray(".card");
 
     const shopSign = document.querySelector(".shop-sign");

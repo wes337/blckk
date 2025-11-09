@@ -5,7 +5,7 @@ import Image from "next/image";
 import gsap from "gsap";
 import { randomNumberBetween } from "@/utils";
 
-export default function Card({ children, zIndex }) {
+export default function Card({ children, onClick, zIndex }) {
   const container = useRef();
   const [animating, setAnimating] = useState(false);
   const [_touch, setTouch] = useState(false);
@@ -44,6 +44,7 @@ export default function Card({ children, zIndex }) {
     <div
       ref={container}
       className={`relative flex items-center justify-center w-[138px] h-[186px] p-1 perspective-distant drop-shadow-[4px_4px_0px_#16232595] hover:drop-shadow-[8px_16px_0px_#16232599]`}
+      onClick={onClick}
       onTouchStart={() => {
         setTouch((touch) => {
           const nextTouch = !touch;
