@@ -165,3 +165,7 @@ body:after {
 input::placeholder {
   height: 28px;
 }
+
+#product-view {
+  max-height: -webkit-fill-available;
+}
