@@ -168,4 +168,5 @@ input::placeholder {
 
 #product-view {
   max-height: -webkit-fill-available;
+  max-height: 100%;
 }
