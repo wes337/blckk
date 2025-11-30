@@ -99,7 +99,7 @@ export default function EmailForm() {
               Thanks!
             </div>
             <div className="text-md text-shadow-[2px_2px_0px_#16232590] text-center mb-2 text-white">
-              We'll let you know when new shows are announced.
+              We&apos;ll let you know when new shows are announced.
             </div>
           </Box>
         ) : (
