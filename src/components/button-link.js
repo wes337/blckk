@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { gsap } from "gsap";
 
-export default function ButtonLink({ label, href, color }) {
+export default function ButtonLink({ label, href, color, size, target }) {
   const bg = () => {
     switch (color) {
       case "blue":
@@ -19,11 +19,23 @@ export default function ButtonLink({ label, href, color }) {
     }
   };
 
+  const textSize = () => {
+    switch (size) {
+      case "lg":
+        return "text-3xl py-2 xl:py-4 ";
+      case "sm":
+        return "text-md py-0.5 xl:py-1";
+      default:
+        return "text-3xl py-2 xl:py-4";
+    }
+  };
+
   return (
     <Link
       key={href}
       className={`h-full w-full filter-[drop-shadow(0px_6px_0_#00000075)]`}
       href={href}
+      target={target}
       onClick={(event) => {
         gsap.fromTo(
           event.target,
@@ -39,7 +51,7 @@ export default function ButtonLink({ label, href, color }) {
       }}
     >
       <div
-        className={`pixel-corners flex w-full min-w-[48px] items-center justify-center py-2 xl:py-4 uppercase text-3xl text-shadow-[0px_4px_0px_#16232575] ${bg()}`}
+        className={`pixel-corners flex w-full min-w-[48px] items-center justify-center uppercase ${textSize()} text-shadow-[0px_4px_0px_#16232575] ${bg()}`}
       >
         {label}
       </div>

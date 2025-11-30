@@ -40,6 +40,28 @@ export default function Navigation() {
       );
     }
 
+    const comingSoon = document.querySelector(".coming-soon");
+    if (comingSoon) {
+      gsap.fromTo(
+        comingSoon,
+        {
+          translateY: "-200%",
+        },
+        { translateY: "300%", ease: "elastic", duration: 2 }
+      );
+    }
+
+    const showsList = document.querySelector(".shows-list");
+    if (showsList) {
+      gsap.fromTo(
+        showsList,
+        {
+          translateY: "0%",
+        },
+        { translateY: "-800%", ease: "elastic.inOut", duration: 1 }
+      );
+    }
+
     const form = document.querySelector(".form");
     if (form) {
       gsap.fromTo(
@@ -165,7 +187,7 @@ export default function Navigation() {
       <div
         className={`fixed top-[12px] md:top-[16px] ${
           home ? "left-[-100%]" : "left-[12px] md:left-[16px]"
-        } transition-all duration-500 z-20 filter-[drop-shadow(0_4px_0_#00000075)]`}
+        } transition-all duration-500 z-20 filter-[drop-shadow(0_4px_0_#00000075)] select-none`}
         onClick={goHome}
       >
         <ButtonLink label="<" color="red" href="#" />
