@@ -1,3 +1,5 @@
+"use client";
+
 import { Suspense } from "react";
 import Image from "next/image";
 import Shopify from "@/shopify";
@@ -8,9 +10,6 @@ import ShopSign from "@/components/shop-sign";
 import EmailForm from "@/components/email-form";
 import ProductView from "./product-view";
 import ProductCard from "./product-card";
-
-export const revalidate = 0;
-export const dynamic = "force-dynamic";
 
 const ENABLED =
   process.env.NODE_ENV === "development" ||
