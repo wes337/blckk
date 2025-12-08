@@ -4,8 +4,8 @@ import Image from "next/image";
 import Card from "@/components/card";
 import Cards from "@/components/cards";
 import Footer from "@/components/footer";
+import EmailForm from "@/components/email-form";
 import ShowsList from "./shows-list";
-import EmailForm from "./email-form";
 
 export default function ShowsPage() {
   return (

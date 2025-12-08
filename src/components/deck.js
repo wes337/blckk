@@ -1,13 +1,14 @@
 "use client";
 
 import { useRef } from "react";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import Image from "next/image";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
 export default function Deck({ amount = 10 }) {
   const container = useRef();
+  const router = useRouter();
   const pathname = usePathname();
 
   useGSAP(
@@ -54,17 +55,30 @@ export default function Deck({ amount = 10 }) {
       className={`w-[143px] h-[186px] fixed top-0 left-0 w-full h-full pointer-events-none fade-in`}
     >
       <div className="deck relative top-[90%] left-[50%] translate-x-[-72.5px] translate-y-[-186px]">
-        {[...Array(amount)].map((_, index) => (
-          <div
-            key={index}
-            className={`deck-card absolute ${
-              index === 9 ? "" : "brightness-50"
-            }`}
-            style={{ translate: `${index * 0.5}px ${index * -1}px` }}
-          >
-            <Image src={`/card-back.png`} alt="" width={138} height={186} />
-          </div>
-        ))}
+        {[...Array(amount)].map((_, index) => {
+          const isTopCard = index === amount - 1;
+
+          return (
+            <div
+              key={index}
+              className={`deck-card absolute ${
+                isTopCard
+                  ? "pointer-events-auto"
+                  : "brightness-50 pointer-events-none"
+              }`}
+              style={{ translate: `${index * 0.5}px ${index * -1}px` }}
+              onClick={() => {
+                if (!isTopCard) {
+                  return;
+                }
+
+                router.push(pathname === "/" ? "/merch" : "/");
+              }}
+            >
+              <Image src={`/card-back.png`} alt="" width={138} height={186} />
+            </div>
+          );
+        })}
       </div>
     </div>
   );

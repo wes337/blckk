@@ -1,12 +1,11 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import Box from "@/components/box";
 import ButtonLink from "@/components/button-link";
 import SHOWS from "./data";
-import Image from "next/image";
 
 export default function ShowsList() {
   const container = useRef();
