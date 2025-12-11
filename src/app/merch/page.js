@@ -11,10 +11,7 @@ import EmailForm from "@/components/email-form";
 import ProductView from "./product-view";
 import ProductCard from "./product-card";
 
-const ENABLED =
-  process.env.NODE_ENV === "development" ||
-  process.env.NEXT_PUBLIC_VERCEL_ENV === "development" ||
-  process.env.NEXT_PUBLIC_VERCEL_ENV === "preview";
+const ENABLED = true;
 
 const products = await Shopify.getProducts();
 
