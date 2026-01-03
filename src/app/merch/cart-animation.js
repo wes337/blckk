@@ -29,8 +29,7 @@ export default function CartAnimation() {
       y: -200,
       rotate: randomNumberBetween(0, 360),
       ease: "elastic",
-      duration: 3,
-      delay: 0.2,
+      duration: 5,
       onComplete: () => {
         setRect(null);
         img.remove();
@@ -61,7 +60,10 @@ export default function CartAnimation() {
       }
 
       setRect(rect);
-      createCard(rect);
+
+      timeout = setTimeout(() => {
+        createCard(rect);
+      }, 500);
     };
 
     document.addEventListener("cartanimation", cartAnimation);
