@@ -4,6 +4,7 @@ import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 import Shopify from "@/shopify";
+import Cache from "@/cache";
 import Cards from "@/components/cards";
 import Card from "@/components/card";
 import Footer from "@/components/footer";
@@ -11,6 +12,7 @@ import ShopSign from "@/components/shop-sign";
 import EmailForm from "@/components/email-form";
 import ProductView from "./product-view";
 import ProductCard from "./product-card";
+import Cart from "./cart";
 
 const ENABLED = true;
 
@@ -18,7 +20,29 @@ const products = await Shopify.getProducts();
 
 export default function MerchPage() {
   const searchParams = useSearchParams();
+  const [cart, setCart] = useState(null);
+  const [cartOpen, setCartOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
+
+  useEffect(() => {
+    const createShopifyCart = async () => {
+      const cachedCartId = await Cache.getItem("cartId");
+      const validCart = cachedCartId
+        ? await Shopify.isCartValid(cachedCartId)
+        : false;
+
+      if (validCart) {
+        const existingCart = await Shopify.getCart(cachedCartId);
+        setCart(existingCart);
+      } else {
+        const cart = await Shopify.createCart();
+        Cache.setItem("cartId", cart.id, 60);
+        setCart(cart);
+      }
+    };
+
+    createShopifyCart();
+  }, []);
 
   useEffect(() => {
     const handle = searchParams.get("product");
@@ -77,7 +101,13 @@ export default function MerchPage() {
           <Footer />
         </div>
       </div>
-      <ProductView product={selectedProduct} />
+      <ProductView product={selectedProduct} cart={cart} />
+      <Cart
+        cart={cart}
+        open={cartOpen}
+        setOpen={setCartOpen}
+        hide={!!selectedProduct}
+      />
     </Suspense>
   );
 }
