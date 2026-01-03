@@ -1,4 +1,5 @@
 "use client";
+
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,20 +8,11 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import Shopify from "@/shopify";
 
-export default function ProductView() {
+export default function ProductView({ product }) {
   const searchParams = useSearchParams();
   const [initialized, setInitialized] = useState(false);
-  const [product, setProduct] = useState(null);
 
   useEffect(() => {
-    const handle = searchParams.get("product");
-
-    if (!handle) {
-      setProduct(null);
-    } else {
-      Shopify.getProduct(handle).then((product) => setProduct(product));
-    }
-
     setInitialized(true);
   }, [searchParams]);
 
@@ -80,12 +72,18 @@ export default function ProductView() {
       >
         Product view
         <Link
-          className="group cursor-pointer absolute top-0 right-0 m-8 filter-[drop-shadow(0px_6px_0_#00000095)]"
+          className="group cursor-pointer absolute top-0 right-0 m-4 md:m-8 filter-[drop-shadow(0px_6px_0_#00000095)]"
           href={`/merch`}
         >
-          <Image src={`/close.png`} width={64} height={64} alt="" />
           <Image
-            className="absolute top-0 left-0 w-full h-full opacity-0 group-hover:opacity-100 transition-opacity duration-100"
+            className="w-[48px] h-[48px] md:w-full h:h-full"
+            src={`/close.png`}
+            width={64}
+            height={64}
+            alt=""
+          />
+          <Image
+            className="absolute top-0 left-0 w-[48px] h-[48px] md:w-full h:h-full opacity-0 group-hover:opacity-100 transition-opacity duration-100"
             src={`/close-hover.png`}
             width={64}
             height={64}

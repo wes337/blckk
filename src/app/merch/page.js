@@ -1,6 +1,7 @@
 "use client";
 
-import { Suspense } from "react";
+import { useState, useEffect, Suspense } from "react";
+import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 import Shopify from "@/shopify";
 import Cards from "@/components/cards";
@@ -16,6 +17,28 @@ const ENABLED = true;
 const products = await Shopify.getProducts();
 
 export default function MerchPage() {
+  const searchParams = useSearchParams();
+  const [selectedProduct, setSelectedProduct] = useState(null);
+
+  useEffect(() => {
+    const handle = searchParams.get("product");
+
+    if (!handle) {
+      setSelectedProduct(null);
+      return;
+    }
+
+    const existingProduct = products.results.find(
+      (product) => product.handle === handle
+    );
+
+    if (existingProduct) {
+      setSelectedProduct(existingProduct);
+    } else {
+      Shopify.getProduct(handle).then((product) => setProduct(product));
+    }
+  }, [searchParams]);
+
   return (
     <Suspense>
       <div className="fixed top-0 left-0 w-full h-full flex flex-col gap-8 items-center justify-center z-10">
@@ -54,7 +77,7 @@ export default function MerchPage() {
           <Footer />
         </div>
       </div>
-      <ProductView />
+      <ProductView product={selectedProduct} />
     </Suspense>
   );
 }
