@@ -11,15 +11,15 @@
   "dependencies": {
     "@gsap/react": "^2.1.2",
     "@shopify/storefront-api-client": "^1.0.9",
-    "axios": "^1.12.2",
+    "axios": "^1.13.2",
     "email-validator": "^2.0.4",
     "gsap": "^3.13.0",
     "localforage": "^1.10.0",
-    "next": "^16.0.7",
+    "next": "^16.1.1",
     "node-cache": "^5.1.2",
     "ogl": "^1.0.11",
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
     "redis": "^5.10.0"
   },
   "devDependencies": {
