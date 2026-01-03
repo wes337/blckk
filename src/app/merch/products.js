@@ -16,9 +16,7 @@ import Cart from "./cart";
 
 const ENABLED = true;
 
-const products = await Shopify.getProducts();
-
-export default function Products() {
+export default function Products({ products }) {
   const searchParams = useSearchParams();
   const [cart, setCart] = useState(null);
   const [cartOpen, setCartOpen] = useState(false);
