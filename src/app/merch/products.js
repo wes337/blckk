@@ -13,6 +13,7 @@ import EmailForm from "@/components/email-form";
 import ProductView from "./product-view";
 import ProductCard from "./product-card";
 import Cart from "./cart";
+import CartAnimation from "./cart-animation";
 
 const ENABLED = true;
 
@@ -106,6 +107,7 @@ export default function Products({ products }) {
         setOpen={setCartOpen}
         hide={!!selectedProduct}
       />
+      <CartAnimation />
     </>
   );
 }

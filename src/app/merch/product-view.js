@@ -181,8 +181,12 @@ export default function ProductView({ cart, product }) {
     const event = new CustomEvent("updatecart");
     document.dispatchEvent(event);
 
+    const animationEvent = new CustomEvent("cartanimation", {
+      detail: product.handle,
+    });
+    document.dispatchEvent(animationEvent);
+
     router.push("/merch");
-    // Do animation
   };
 
   const title = product?.title || "";

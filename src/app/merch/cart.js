@@ -120,44 +120,101 @@ export default function Cart({ cart, open, setOpen, hide }) {
       </button>
       {initialized &&
         createPortal(
-          <div
-            className={`fixed top-0 h-full w-full md:w-[33vw] flex flex-col bg-darker filter-[drop-shadow(-6px_0_0_#00000095)] z-30 ${
-              open ? "right-0" : "right-[-110%] pointer-events-none"
-            } transition-all duration-300`}
-          >
-            <div className="text-center p-5 text-2xl tracking-wide uppercase text-shadow-[0px_4px_0px_#16232575]">
-              Shopping Cart
-            </div>
-            <button
-              className={`group cursor-pointer absolute top-0 right-0 m-3 z-35 filter-[drop-shadow(0px_6px_0_#00000095)]`}
+          <>
+            <div
+              className={`fixed top-0 left-0 w-full h-full z-25 bg-black/75 ${
+                open ? "opacity-100" : "opacity-0 pointer-events-none"
+              }`}
               onClick={() => setOpen(false)}
+            />
+            <div
+              className={`fixed top-0 h-full w-full md:w-[33vw] flex flex-col bg-darker filter-[drop-shadow(-6px_0_0_#00000095)] z-30 ${
+                open ? "right-0" : "right-[-110%] pointer-events-none"
+              } transition-all duration-300`}
             >
-              <Image
-                className="w-[48px] h-[48px]"
-                src={`/close.png`}
-                width={64}
-                height={64}
-                alt=""
-              />
-              <Image
-                className="absolute top-0 left-0 w-[48px] h-[48px] opacity-0 group-hover:opacity-100 transition-opacity duration-100"
-                src={`/close-hover.png`}
-                width={64}
-                height={64}
-                alt=""
-              />
-            </button>
-            <div className="h-full w-full px-4">
-              <div className="h-full w-full bg-darkest pixel-corners"></div>
+              <div className="text-center p-5 text-2xl tracking-wide uppercase text-shadow-[0px_4px_0px_#16232575]">
+                Shopping Cart
+              </div>
+              <button
+                className={`group cursor-pointer absolute top-0 right-0 m-3 z-35 filter-[drop-shadow(0px_6px_0_#00000095)]`}
+                onClick={() => setOpen(false)}
+              >
+                <Image
+                  className="w-[48px] h-[48px]"
+                  src={`/close.png`}
+                  width={64}
+                  height={64}
+                  alt=""
+                />
+                <Image
+                  className="absolute top-0 left-0 w-[48px] h-[48px] opacity-0 group-hover:opacity-100 transition-opacity duration-100"
+                  src={`/close-hover.png`}
+                  width={64}
+                  height={64}
+                  alt=""
+                />
+              </button>
+              <div className="h-full w-full px-4 overflow-y-auto">
+                <div className="h-full w-full bg-darkest pixel-corners overflow-auto">
+                  {cartItems.map((cartItem) => {
+                    return (
+                      <div
+                        key={cartItem.id}
+                        className="flex p-4 gap-2 hover:bg-white/5"
+                      >
+                        <div className="relative w-[48px] h-[48px]">
+                          <span className="text-xs text-yellow text-shadow-[2px_2px_0px_#00000090] absolute bottom-[-4px] left-[-4px] z-1">
+                            {Math.max(cartItem.quantity, 1)}x
+                          </span>
+                          <Image
+                            className="w-full h-full object-cover pixel-corners"
+                            src={cartItem.image}
+                            alt=""
+                            width={40}
+                            height={40}
+                          />
+                        </div>
+                        <div className="my-auto">
+                          <div className="tracking-wider">
+                            {cartItem.productTitle}
+                          </div>
+                          <div className="text-sm text-white/80 tracking-wide">
+                            {cartItem.variantTitle === "Default Title"
+                              ? ""
+                              : cartItem.variantTitle}
+                          </div>
+                        </div>
+                        <div className="my-auto ml-auto">
+                          ${(cartItem.price * cartItem.quantity).toFixed(2)}
+                        </div>
+                        <button
+                          className="cursor-pointer w-[40px] h-[40px] my-auto"
+                          onClick={() => onRemoveCartItem(cartItem)}
+                        >
+                          <Image
+                            src={`/remove.png`}
+                            alt="Remove"
+                            width={64}
+                            height={64}
+                          />
+                        </button>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+              <div className="px-4 py-2 ml-auto uppercase text-shadow-[0px_4px_0px_#16232575]">
+                Subtotal ${subtotal().toFixed(2)}
+              </div>
+              <div className="w-full px-2 pb-4">
+                <Button
+                  label="Checkout"
+                  color="orange"
+                  onClick={onClickCheckout}
+                />
+              </div>
             </div>
-            <div className="w-full p-4">
-              <Button
-                label="Checkout"
-                color="orange"
-                onClick={onClickCheckout}
-              />
-            </div>
-          </div>,
+          </>,
           document.body
         )}
     </>

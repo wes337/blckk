@@ -7,6 +7,7 @@ export default function ProductCard({ product }) {
   return (
     <Card>
       <Link
+        id={`product-${product.handle}`}
         className="relative flex flex-col items-center h-full"
         href={`/merch?product=${product.handle}`}
       >
@@ -22,7 +23,7 @@ export default function ProductCard({ product }) {
         </div>
         <div className="absolute bottom-[-4px] right-[-4px] text-yellow text-xl tracking-wide bg-darkest p-1 pixel-corners">
           <div className="pixel-corners bg-dark py-1 px-2 text-shadow-[4px_2px_0_#00000075]">
-            $99.99
+            ${Number(product.price).toFixed(2)}
           </div>
         </div>
       </Link>

@@ -40,7 +40,6 @@ export default function Deck({ amount = 10 }) {
       cards.forEach((card, index) => {
         gsap.to(card, {
           translateY: pathname === "/" ? -index : -100 - index,
-
           ease: "elastic.inOut",
           delay: index * 0.05,
         });
