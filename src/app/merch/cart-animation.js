@@ -61,7 +61,7 @@ export default function CartAnimation() {
       const tl = gsap.timeline();
       tl.to("#cart-button", { scale: 2.0, duration: 0.1 });
       tl.to("#cart-button", { scale: 1.0, duration: 0.1 });
-    }, 200);
+    }, 400);
 
     setTimeout(() => {
       img?.remove?.();

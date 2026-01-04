@@ -1,25 +1,31 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import Image from "next/image";
 import gsap from "gsap";
 import { randomNumberBetween } from "@/utils";
 
-export default function Card({ children, onClick, zIndex }) {
-  const container = useRef();
+export default function Card({ children, onClick }) {
+  const cardRef = useRef();
   const [animating, setAnimating] = useState(false);
   const [_touch, setTouch] = useState(false);
 
+  useEffect(() => {
+    return () => {
+      if (cardRef.current) {
+        gsap.killTweensOf(cardRef.current);
+      }
+    };
+  }, []);
+
   const onHoverOn = () => {
-    if (animating || !container.current) {
+    if (animating || !cardRef.current) {
       return;
     }
 
     setAnimating(true);
 
-    const card = container.current.querySelector(".card");
-
-    gsap.to(card, {
+    gsap.to(cardRef.current, {
       rotateZ: 0,
       scale: 1.2,
       ease: "elastic",
@@ -29,9 +35,11 @@ export default function Card({ children, onClick, zIndex }) {
   };
 
   const onHoverOff = () => {
-    const card = container.current.querySelector(".card");
+    if (!cardRef.current) {
+      return;
+    }
 
-    gsap.to(card, {
+    gsap.to(cardRef.current, {
       rotateZ: randomNumberBetween(-3, 3),
       scale: 1,
       ease: "elastic",
@@ -42,7 +50,6 @@ export default function Card({ children, onClick, zIndex }) {
 
   return (
     <div
-      ref={container}
       className={`relative flex items-center justify-center w-[138px] h-[186px] p-1 perspective-distant drop-shadow-[4px_4px_0px_#16232595] hover:drop-shadow-[8px_16px_0px_#16232599]`}
       onClick={onClick}
       onTouchStart={() => {
@@ -61,7 +68,10 @@ export default function Card({ children, onClick, zIndex }) {
       onMouseEnter={onHoverOn}
       onMouseLeave={onHoverOff}
     >
-      <div className="card relative transform-3d rotate-y-180 rotate-z-0 rotate-x-0 w-[0px] h-[0px]">
+      <div
+        ref={cardRef}
+        className="card relative transform-3d rotate-y-180 rotate-z-0 rotate-x-0 w-[0px] h-[0px] will-change-transform"
+      >
         <div className="absolute top-0 left-0 w-full h-full">
           <Image src={`/card-back.png`} width={138} height={186} alt="" />
         </div>
