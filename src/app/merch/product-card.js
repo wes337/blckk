@@ -1,8 +1,10 @@
 import Link from "next/link";
+import Image from "next/image";
 import Card from "@/components/card";
 
 export default function ProductCard({ product }) {
   const longTitle = product.title.length > 16;
+  const image = product.images[0];
 
   return (
     <Card>
@@ -15,11 +17,15 @@ export default function ProductCard({ product }) {
           {product.title}
         </div>
         <div className="h-full w-full">
-          <img
-            className="h-full w-auto object-contain m-auto"
-            src={product.images[0]}
-            alt=""
-          />
+          {image && (
+            <Image
+              className="h-full w-auto object-contain m-auto"
+              src={image}
+              width={138}
+              height={186}
+              alt=""
+            />
+          )}
         </div>
         <div className="absolute bottom-[-4px] right-[-4px] text-yellow text-xl tracking-wide bg-darkest p-1 pixel-corners">
           <div className="pixel-corners bg-dark py-1 px-2 text-shadow-[4px_2px_0_#00000075]">
