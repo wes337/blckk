@@ -13,13 +13,13 @@ export default function ProductCard({ product }) {
         className="relative flex flex-col items-center h-full"
         href={`/merch?product=${product.handle}`}
       >
-        <div className={`whitespace-nowrap ${longTitle ? "text-xs" : ""}`}>
+        <div className={`whitespace-nowrap ${longTitle ? "text-xs" : ""} z-1`}>
           {product.title}
         </div>
         <div className="h-full w-full">
           {image && (
             <Image
-              className="h-full w-auto object-contain m-auto"
+              className="h-full w-auto object-contain m-auto -mt-[20px] select-none"
               src={image}
               width={138}
               height={186}

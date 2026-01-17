@@ -36,7 +36,7 @@ export default function Navigation() {
         {
           translateY: "0%",
         },
-        { translateY: "-1000%", ease: "back.inOut", duration: 1 }
+        { translateY: "-1000%", ease: "back.inOut", duration: 1 },
       );
     }
 
@@ -47,7 +47,7 @@ export default function Navigation() {
         {
           translateY: "-200%",
         },
-        { translateY: "300%", ease: "elastic", duration: 2 }
+        { translateY: "300%", ease: "elastic", duration: 2 },
       );
     }
 
@@ -58,7 +58,7 @@ export default function Navigation() {
         {
           translateY: "0%",
         },
-        { translateY: "-800%", ease: "elastic.inOut", duration: 1 }
+        { translateY: "-800%", ease: "elastic.inOut", duration: 1 },
       );
     }
 
@@ -69,7 +69,7 @@ export default function Navigation() {
         {
           translateY: "0%",
         },
-        { translateY: "1000%", ease: "back.inOut", duration: 1 }
+        { translateY: "1000%", ease: "back.inOut", duration: 1 },
       );
     }
 
@@ -131,7 +131,7 @@ export default function Navigation() {
         duration: 1,
       });
     },
-    { dependencies: [home], scope: container }
+    { dependencies: [home], scope: container },
   );
 
   return (

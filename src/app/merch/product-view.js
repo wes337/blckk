@@ -101,7 +101,7 @@ export default function ProductView({ cart, product }) {
           bottom: "0%",
           ease: "elastic.inOut",
           duration: 1,
-        }
+        },
       );
     } else {
       gsap.fromTo(
@@ -111,7 +111,7 @@ export default function ProductView({ cart, product }) {
           bottom: "-100%",
           ease: "elastic",
           duration: 1,
-        }
+        },
       );
     }
   }, [dropdownOpen]);
@@ -190,6 +190,7 @@ export default function ProductView({ cart, product }) {
   };
 
   const title = product?.title || "";
+  const description = product?.description || "";
   const longTitle = title.length > 16;
   const images = product?.images || [];
   const variants = product?.variants || [];
@@ -206,6 +207,8 @@ export default function ProductView({ cart, product }) {
     return Number(selectedVariant?.price || product.price).toFixed(2);
   })();
 
+  console.log(product);
+
   return (
     <>
       {initialized &&
@@ -219,27 +222,27 @@ export default function ProductView({ cart, product }) {
             href={`/merch`}
           >
             <Image
-              className="w-[48px] h-[48px] md:w-full md:h-full"
+              className="w-[48px] h-[48px] md:w-[64px] md:h-[64px] lg:h-[72px] lg:w-[72px]"
               src={`/close.png`}
               width={64}
               height={64}
               alt=""
             />
             <Image
-              className="absolute top-0 left-0 w-[48px] h-[48px] md:w-full md:h-full opacity-0 group-hover:opacity-100 transition-opacity duration-100"
+              className="absolute top-0 left-0 w-[48px] h-[48px] md:w-[64px] md:h-[64px] lg:h-[72px] lg:w-[72px] opacity-0 group-hover:opacity-100 transition-opacity duration-100"
               src={`/close-hover.png`}
               width={64}
               height={64}
               alt=""
             />
           </Link>,
-          document.body
+          document.body,
         )}
       <div
         id="product-view"
-        className={`fixed h-[100vh] w-[95vw] md:w-[50vw] z-30 bg-gray pixel-corners-large p-2`}
+        className={`fixed h-auto sm:h-screen w-[95vw] md:w-[66vw] 3xl:w-[50vw] z-30 bg-gray pixel-corners-large p-2`}
       >
-        <div className="h-full w-full pixel-corners-large bg-white">
+        <div className="h-full w-full pixel-corners-large bg-white overflow-y-auto pb-10">
           <div
             className={`flex items-center text-darkest text-shadow-[1px_1px_0px_#16232590] h-[60px] p-3 border-gray border-b-2 ${
               longTitle ? "text-2xl" : "text-3xl"
@@ -254,7 +257,9 @@ export default function ProductView({ cart, product }) {
             />
             {title}
           </div>
-          <div className="relative w-full max-[376px]:h-[68.5%] h-[70%] min-[1920px]:h-[75%] bg-gray/50">
+          <div
+            className={`relative w-full ${description ? "h-[calc(60vh-112px)] sm:h-[60vh]" : "h-[60vh] sm:h-[70vh]"} bg-white`}
+          >
             {images.map((image, index) => {
               return (
                 <Image
@@ -337,7 +342,7 @@ export default function ProductView({ cart, product }) {
                   showSizeError
                     ? "bg-red text-red"
                     : "bg-darkest text-white text-shadow-[1px_1px_0px_#16232590] "
-                } hover:bg-darkest/50 w-[200px] uppercase pixel-corners p-1 transition-all duration-200 z-3`}
+                } hover:bg-darkest/50 w-[200px] uppercase pixel-corners p-1 transition-all duration-200 z-3 ${hasSizes ? "" : "hidden"}`}
                 onMouseEnter={() => {
                   gsap.to("#variant-dropdown-button", {
                     scale: 1.05,
@@ -377,6 +382,11 @@ export default function ProductView({ cart, product }) {
               </div>
             </div>
           </div>
+          {description && (
+            <div className="text-lg text-darkest text-shadow-[1px_1px_0px_#16232590] md:mt-4 px-4 py-2">
+              {description}
+            </div>
+          )}
         </div>
       </div>
       {initialized &&
@@ -427,7 +437,7 @@ export default function ProductView({ cart, product }) {
               </div>
             </div>
           </div>,
-          document.body
+          document.body,
         )}
       <div
         className={`fixed top-0 left-0 w-full h-full bg-black/50 ${

@@ -35,14 +35,17 @@ export default function ShopSign() {
         {
           translateY: "100%",
         },
-        { translateY: "0%", ease: "elastic", duration: 2 }
+        { translateY: "0%", ease: "elastic", duration: 2 },
       );
     },
-    { dependencies: [], scope: container }
+    { dependencies: [], scope: container },
   );
 
   return (
-    <div ref={container}>
+    <div
+      ref={container}
+      className="relative mt-[328px] sm:mt-[228px] xl:mt-[15%]"
+    >
       <div className="shop-sign relative w-[228px] h-[114px]">
         <Image
           className={`absolute w-full h-full ${

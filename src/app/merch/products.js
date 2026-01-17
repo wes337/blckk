@@ -52,7 +52,7 @@ export default function Products({ products }) {
     }
 
     const existingProduct = products.results.find(
-      (product) => product.handle === handle
+      (product) => product.handle === handle,
     );
 
     if (existingProduct) {
@@ -64,14 +64,16 @@ export default function Products({ products }) {
 
   return (
     <>
-      <div className="fixed top-0 left-0 w-full h-full flex flex-col gap-8 items-center justify-center z-10">
+      <div className="fixed top-0 left-0 w-full h-full flex flex-col gap-8 items-center justify-center z-10 overflow-y-auto">
         <ShopSign />
         {ENABLED ? (
-          <Cards>
-            {products.results.map((product) => (
-              <ProductCard key={product.id} product={product} />
-            ))}
-          </Cards>
+          <div className="h-full">
+            <Cards columns={{ sm: 2, md: 3, lg: 5 }}>
+              {products.results.map((product) => (
+                <ProductCard key={product.id} product={product} />
+              ))}
+            </Cards>
+          </div>
         ) : (
           <>
             <EmailForm />
@@ -96,7 +98,7 @@ export default function Products({ products }) {
             </Cards>
           </>
         )}
-        <div className="absolute bottom-0">
+        <div>
           <Footer />
         </div>
       </div>
