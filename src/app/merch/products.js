@@ -16,8 +16,6 @@ import ProductCard from "./product-card";
 import Cart from "./cart";
 import CartAnimation from "./cart-animation";
 
-const ENABLED = true;
-
 export default function Products({ products }) {
   const searchParams = useSearchParams();
   const [cart, setCart] = useState(null);
@@ -72,7 +70,7 @@ export default function Products({ products }) {
         {showEmailForm &&
           createPortal(
             <>
-              <div className="fixed top-0 left-0 w-full h-full bg-darkest/90 z-25" />
+              <div className="fixed top-0 left-0 w-full h-full bg-darkest/90 z-25 fade-in" />
               <div className="absolute flex items-center justify-center w-full h-full z-26">
                 <EmailForm onClose={() => setShowEmailForm(false)} />
               </div>
@@ -80,69 +78,49 @@ export default function Products({ products }) {
             document.body,
           )}
 
-        {ENABLED ? (
-          <div className="h-full">
-            <Cards columns={{ sm: 2, md: 3, xl: 6 }}>
-              {products.results.map((product) => (
-                <ProductCard key={product.id} product={product} />
-              ))}
-              <Card>
-                <div
-                  className="absolute top-0 left-0 w-full h-full"
-                  onClick={() => {
-                    setShowEmailForm(true);
-                  }}
-                >
-                  <div className="absolute top-[50%] left-[50%] translate-[-50%] text-center text-2xl uppercase font-bold text-darkest">
-                    Get Updates
-                  </div>
-                  <Image
-                    className="w-full h-full"
-                    src={`/joker.png`}
-                    width={138}
-                    height={186}
-                    alt=""
-                  />
+        <div className="h-full">
+          <Cards columns={{ sm: 2, md: 3, xl: 6 }}>
+            {products.results.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+            <Card>
+              <div
+                className="absolute top-0 left-0 w-full h-full"
+                onClick={() => {
+                  setShowEmailForm(true);
+                }}
+              >
+                <div className="absolute top-[50%] left-[50%] translate-[-50%] text-center text-2xl uppercase font-bold text-darkest">
+                  Get Updates
                 </div>
-              </Card>
-            </Cards>
-          </div>
-        ) : (
-          <>
-            <EmailForm />
-            <Cards columns={1}>
-              <Card>
-                <div
-                  className="absolute top-0 left-0 w-full h-full"
-                  onClick={() => {
-                    const event = new CustomEvent("goHome");
-                    document.dispatchEvent(event);
-                  }}
-                >
-                  <Image
-                    className="w-full h-full"
-                    src={`/joker.png`}
-                    width={138}
-                    height={186}
-                    alt=""
-                  />
-                </div>
-              </Card>
-            </Cards>
-          </>
-        )}
+                <Image
+                  className="w-full h-full"
+                  src={`/joker.png`}
+                  width={138}
+                  height={186}
+                  alt=""
+                />
+              </div>
+            </Card>
+          </Cards>
+        </div>
+
         <div>
           <Footer />
         </div>
       </div>
-      <ProductView product={selectedProduct} cart={cart} />
-      <Cart
-        cart={cart}
-        open={cartOpen}
-        setOpen={setCartOpen}
-        hide={!!selectedProduct}
-      />
-      <CartAnimation />
+      {cart && (
+        <>
+          <ProductView product={selectedProduct} cart={cart} />
+          <Cart
+            cart={cart}
+            open={cartOpen}
+            setOpen={setCartOpen}
+            hide={!!selectedProduct}
+          />
+          <CartAnimation />
+        </>
+      )}
     </>
   );
 }

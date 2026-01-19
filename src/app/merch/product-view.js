@@ -6,7 +6,6 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
 import Shopify from "@/shopify";
 import Button from "@/components/button";
 
@@ -44,12 +43,14 @@ export default function ProductView({ cart, product }) {
     tl.to("#product-view", {
       opacity: 1,
       pointerEvents: "none",
+      force3D: true,
     });
 
     tl.fromTo("#product-view", from, {
       ...to,
       ease: "elastic",
       duration: 1,
+      force3D: true,
     });
   };
 
@@ -64,10 +65,12 @@ export default function ProductView({ cart, product }) {
       ease: "elastic",
       duration: 1,
       opacity: 1,
+      force3D: true,
     });
 
     tl.to("#product-view", {
       opacity: 0,
+      force3D: true,
     });
   };
 
@@ -206,8 +209,6 @@ export default function ProductView({ cart, product }) {
 
     return Number(selectedVariant?.price || product.price).toFixed(2);
   })();
-
-  console.log(product);
 
   return (
     <>

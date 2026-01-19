@@ -1,13 +1,12 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { randomNumberBetween } from "@/utils";
 import ButtonLink from "@/components/button-link";
-import { createPortal } from "react-dom";
 import Box from "./box";
 
 gsap.registerPlugin(useGSAP);
@@ -24,72 +23,56 @@ export default function Navigation() {
   const pathname = usePathname();
   const [home, setHome] = useState(pathname === "/");
 
-  const goHome = () => {
+  const goHome = useCallback(() => {
     window.history.replaceState(null, "", pathname);
 
     const cards = gsap.utils.toArray(".card");
-
     const shopSign = document.querySelector(".shop-sign");
-    if (shopSign) {
-      gsap.fromTo(
-        shopSign,
-        {
-          translateY: "0%",
-        },
-        { translateY: "-1000%", ease: "back.inOut", duration: 1 },
-      );
-    }
-
     const comingSoon = document.querySelector(".coming-soon");
-    if (comingSoon) {
-      gsap.fromTo(
-        comingSoon,
-        {
-          translateY: "-200%",
-        },
-        { translateY: "300%", ease: "elastic", duration: 2 },
-      );
-    }
-
     const showsList = document.querySelector(".shows-list");
-    if (showsList) {
-      gsap.fromTo(
-        showsList,
-        {
-          translateY: "0%",
-        },
-        { translateY: "-800%", ease: "elastic.inOut", duration: 1 },
-      );
-    }
-
     const form = document.querySelector(".form");
+
+    if (shopSign) {
+      gsap.to(shopSign, {
+        translateY: "-1000%",
+        ease: "back.inOut",
+        duration: 1,
+      });
+    }
+    if (comingSoon) {
+      gsap.to(comingSoon, { translateY: "300%", ease: "elastic", duration: 2 });
+    }
+    if (showsList) {
+      gsap.to(showsList, {
+        translateY: "-800%",
+        ease: "elastic.inOut",
+        duration: 1,
+      });
+    }
     if (form) {
-      gsap.fromTo(
-        form,
-        {
-          translateY: "0%",
-        },
-        { translateY: "1000%", ease: "back.inOut", duration: 1 },
-      );
+      gsap.to(form, { translateY: "1000%", ease: "back.inOut", duration: 1 });
     }
 
     if (cards && cards.length > 0) {
       cards.forEach((card, i) => {
+        const isLastCard = i === cards.length - 1;
+
         gsap.to(card, {
-          ease: "bounce",
           rotateY: 180,
+          ease: "bounce",
           delay: i * 0.1,
+          duration: 0.5,
         });
 
         gsap.to(card, {
-          ease: "bounce.in",
           width: 0,
           height: 0,
           rotateZ: randomNumberBetween(-10, 10),
+          ease: "bounce.in",
           duration: 0.5,
           delay: i * 0.1,
           onComplete: () => {
-            if (i === cards.length - 1) {
+            if (isLastCard) {
               router.push("/");
             }
           },
@@ -98,7 +81,7 @@ export default function Navigation() {
     } else {
       router.push("/");
     }
-  };
+  }, [pathname, router]);
 
   useEffect(() => {
     setHome(pathname === "/");

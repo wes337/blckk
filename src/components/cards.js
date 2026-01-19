@@ -47,39 +47,37 @@ export default function Cards({ columns = { sm: 2, md: 2, lg: 2 }, children }) {
   useGSAP(
     () => {
       if (typeof window === "undefined") return;
-
       setAnimating(true);
 
       const cards = gsap.utils.toArray(".card");
-      const tl = gsap.timeline();
 
-      cards.forEach((card, index) => {
-        tl.to(
-          card,
-          {
-            width: 138,
-            height: 186,
-            ease: "bounce.out",
-            duration: 0.5,
-            delay: 1 + index * 0.1,
-          },
-          0,
-        );
-
-        tl.to(
-          card,
-          {
-            ease: "bounce",
-            rotateY: 0,
-            rotateZ: randomNumberBetween(-3, 3),
-            delay: index * 0.1,
-            duration: 0.5,
-          },
-          "<",
-        );
+      const tl = gsap.timeline({
+        defaults: {
+          force3D: true,
+          ease: "bounce.out",
+        },
+        onComplete: () => setAnimating(false),
       });
 
-      tl.play().then(() => setAnimating(false));
+      tl.to(
+        cards,
+        {
+          width: 138,
+          height: 186,
+          duration: 0.5,
+          stagger: 0.1,
+        },
+        1,
+      ).to(
+        cards,
+        {
+          rotateY: 0,
+          rotateZ: () => randomNumberBetween(-3, 3),
+          duration: 0.5,
+          stagger: 0.1,
+        },
+        "<",
+      );
     },
     { dependencies: [], scope: container },
   );

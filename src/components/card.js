@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import gsap from "gsap";
 import { randomNumberBetween } from "@/utils";
@@ -8,9 +8,13 @@ import { randomNumberBetween } from "@/utils";
 export default function Card({ children, onClick }) {
   const cardRef = useRef();
   const [animating, setAnimating] = useState(false);
-  const [_touch, setTouch] = useState(false);
+  const initialRotation = useRef(randomNumberBetween(-3, 3));
 
   useEffect(() => {
+    if (cardRef.current) {
+      gsap.set(cardRef.current, { rotateZ: initialRotation.current });
+    }
+
     return () => {
       if (cardRef.current) {
         gsap.killTweensOf(cardRef.current);
@@ -18,53 +22,40 @@ export default function Card({ children, onClick }) {
     };
   }, []);
 
-  const onHoverOn = () => {
+  const onHoverOn = useCallback(() => {
     if (animating || !cardRef.current) {
       return;
     }
-
     setAnimating(true);
 
     gsap.to(cardRef.current, {
       rotateZ: 0,
       scale: 1.2,
-      ease: "elastic",
+      ease: "elastic.out(1, 0.5)",
       duration: 0.4,
+      force3D: true,
       onComplete: () => setAnimating(false),
     });
-  };
+  }, [animating]);
 
-  const onHoverOff = () => {
+  const onHoverOff = useCallback(() => {
     if (!cardRef.current) {
       return;
     }
 
     gsap.to(cardRef.current, {
-      rotateZ: randomNumberBetween(-3, 3),
+      rotateZ: initialRotation.current,
       scale: 1,
-      ease: "elastic",
+      ease: "elastic.out(1, 0.5)",
       duration: 0.4,
-      onComplete: () => setAnimating(false),
+      force3D: true,
     });
-  };
+  }, []);
 
   return (
     <div
       className={`relative flex items-center justify-center w-[138px] h-[186px] p-1 perspective-distant drop-shadow-[4px_4px_0px_#16232595] hover:drop-shadow-[8px_16px_0px_#16232599]`}
       onClick={onClick}
-      onTouchStart={() => {
-        setTouch((touch) => {
-          const nextTouch = !touch;
-
-          if (nextTouch) {
-            onHoverOn();
-          } else {
-            onHoverOff();
-          }
-
-          return nextTouch;
-        });
-      }}
       onMouseEnter={onHoverOn}
       onMouseLeave={onHoverOff}
     >
