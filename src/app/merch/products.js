@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 import Shopify from "@/shopify";
@@ -22,6 +23,7 @@ export default function Products({ products }) {
   const [cart, setCart] = useState(null);
   const [cartOpen, setCartOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
+  const [showEmailForm, setShowEmailForm] = useState(false);
 
   useEffect(() => {
     const createShopifyCart = async () => {
@@ -66,12 +68,43 @@ export default function Products({ products }) {
     <>
       <div className="fixed top-0 left-0 w-full h-full flex flex-col gap-8 items-center justify-center z-10 overflow-y-auto">
         <ShopSign />
+
+        {showEmailForm &&
+          createPortal(
+            <>
+              <div className="fixed top-0 left-0 w-full h-full bg-darkest/90 z-25" />
+              <div className="absolute flex items-center justify-center w-full h-full z-26">
+                <EmailForm onClose={() => setShowEmailForm(false)} />
+              </div>
+            </>,
+            document.body,
+          )}
+
         {ENABLED ? (
           <div className="h-full">
-            <Cards columns={{ sm: 2, md: 3, lg: 5 }}>
+            <Cards columns={{ sm: 2, md: 3, xl: 6 }}>
               {products.results.map((product) => (
                 <ProductCard key={product.id} product={product} />
               ))}
+              <Card>
+                <div
+                  className="absolute top-0 left-0 w-full h-full"
+                  onClick={() => {
+                    setShowEmailForm(true);
+                  }}
+                >
+                  <div className="absolute top-[50%] left-[50%] translate-[-50%] text-center text-2xl uppercase font-bold text-darkest">
+                    Get Updates
+                  </div>
+                  <Image
+                    className="w-full h-full"
+                    src={`/joker.png`}
+                    width={138}
+                    height={186}
+                    alt=""
+                  />
+                </div>
+              </Card>
             </Cards>
           </div>
         ) : (

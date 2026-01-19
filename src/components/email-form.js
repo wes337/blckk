@@ -7,7 +7,7 @@ import { useGSAP } from "@gsap/react";
 import Cache from "@/cache";
 import Box from "@/components/box";
 
-export default function EmailForm() {
+export default function EmailForm({ onClose }) {
   const container = useRef();
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
@@ -15,7 +15,7 @@ export default function EmailForm() {
 
   useEffect(() => {
     Cache.getItem("email-submitted").then((submitted) => {
-      setHidden(submitted);
+      setSubmitted(submitted);
     });
   }, []);
 
@@ -30,10 +30,10 @@ export default function EmailForm() {
         {
           translateY: "100%",
         },
-        { translateY: "0%", ease: "elastic", duration: 2 }
+        { translateY: "0%", ease: "elastic", duration: 2 },
       );
     },
-    { dependencies: [], scope: container }
+    { dependencies: [], scope: container },
   );
 
   const onSubmit = async (event) => {
@@ -78,8 +78,9 @@ export default function EmailForm() {
         delay: 2,
         onComplete: () => {
           setHidden(true);
+          onClose?.();
         },
-      }
+      },
     );
   };
 
@@ -89,6 +90,27 @@ export default function EmailForm() {
 
   return (
     <div ref={container}>
+      {onClose && (
+        <button
+          className={`group cursor-pointer fixed top-0 right-0 m-3 z-35 filter-[drop-shadow(0px_6px_0_#00000095)] transition-all duration-500`}
+          onClick={onClose}
+        >
+          <Image
+            className="w-[48px] h-[48px] md:w-[64px] md:h-[64px] lg:h-[72px] lg:w-[72px]"
+            src={`/close.png`}
+            width={64}
+            height={64}
+            alt=""
+          />
+          <Image
+            className="absolute top-0 left-0 w-[48px] h-[48px] md:w-[64px] md:h-[64px] lg:h-[72px] lg:w-[72px] opacity-0 group-hover:opacity-100 transition-opacity duration-100"
+            src={`/close-hover.png`}
+            width={64}
+            height={64}
+            alt=""
+          />
+        </button>
+      )}
       <form
         className="form flex flex-col gap-2 items-center justify-center w-[320px]"
         onSubmit={onSubmit}
@@ -99,7 +121,7 @@ export default function EmailForm() {
               Thanks!
             </div>
             <div className="text-md text-shadow-[2px_2px_0px_#16232590] text-center mb-2 text-white">
-              We&apos;ll let you know when new shows are announced.
+              We&apos;ll let you know when new shows and products are announced.
             </div>
           </Box>
         ) : (
