@@ -134,15 +134,16 @@ export default function Navigation() {
         >
           <button
             id="logo"
-            className="w-[75vw] md:w-[33vw] cursor-pointer pointer-events-auto"
+            className="w-[75vw] md:w-[33vw] cursor-pointer pointer-events-auto drop-shadow-[0_0_8px_#ffffff95]"
             onClick={goHome}
           >
             <Image
-              className="logo w-full h-full drop-shadow-[0_0_8px_#ffffff95]"
+              className="logo w-full h-full"
               src={`/logo.png`}
               width={1416}
               height={545}
               alt="BLCKK"
+              priority
             />
           </button>
           <div
