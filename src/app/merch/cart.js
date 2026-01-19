@@ -48,6 +48,16 @@ export default function Cart({ cart, open, setOpen, hide }) {
     getShopifyCartItems();
   }, [cart, open, getShopifyCartItems]);
 
+  const itemsInCart = () => {
+    let amount = 0;
+
+    cartItems.forEach(({ price, quantity }) => {
+      amount += Number(quantity);
+    });
+
+    return amount;
+  };
+
   const subtotal = () => {
     let amount = 0;
 
@@ -112,9 +122,9 @@ export default function Cart({ cart, open, setOpen, hide }) {
           height={64}
           alt="Shopping Cart"
         />
-        {cartItems.length > 0 && (
+        {itemsInCart() > 0 && (
           <div className="absolute bottom-[-8px] left-[-8px] z-2 bg-darkest/75 w-[28px] pixel-corners">
-            {cartItems.length}
+            {itemsInCart()}
           </div>
         )}
       </button>
@@ -215,7 +225,7 @@ export default function Cart({ cart, open, setOpen, hide }) {
               </div>
             </div>
           </>,
-          document.body
+          document.body,
         )}
     </>
   );

@@ -172,7 +172,7 @@ export default function ProductView({ cart, product }) {
   };
 
   const onAddToCart = async () => {
-    if (!cart || !product) {
+    if (!cart || !product || product.soldOut) {
       return;
     }
 
@@ -197,7 +197,7 @@ export default function ProductView({ cart, product }) {
   };
 
   const title = product?.title || "";
-  const description = product?.description || "";
+  const description = product?.descriptionHtml || product?.description || "";
   const longTitle = title.length > 16;
   const images = product?.images || [];
   const variants = product?.variants || [];
@@ -383,7 +383,7 @@ export default function ProductView({ cart, product }) {
             <div className="p-1 my-auto">
               <div className="flex bg-darkest/50 p-1 pixel-corners">
                 <Button
-                  label="Add to Cart"
+                  label={product?.soldOut ? "Sold Out" : "Add to Cart"}
                   color="red"
                   size="md"
                   onClick={onAddToCart}
@@ -392,9 +392,10 @@ export default function ProductView({ cart, product }) {
             </div>
           </div>
           {description && (
-            <div className="text-lg text-darkest text-shadow-[1px_1px_0px_#16232590] md:mt-4 px-4 py-2">
-              {description}
-            </div>
+            <div
+              className="text-lg text-darkest text-shadow-[1px_1px_0px_#16232590] md:mt-4 px-4 py-2"
+              dangerouslySetInnerHTML={{ __html: description }}
+            />
           )}
         </div>
       </div>
@@ -417,11 +418,11 @@ export default function ProductView({ cart, product }) {
                   return (
                     <button
                       key={`${variant.id}-${index}`}
-                      className={`cursor-pointer pixel-corners ${
+                      className={`pixel-corners ${
                         selected
                           ? "text-yellow bg-white/25"
                           : "text-white bg-white/15"
-                      } p-2 hover:text-yellow hover:bg-white/33 hover:text-shadow-[2px_2px_0px_#00000050]`}
+                      } p-2 ${variant.availableForSale ? "cursor-pointer hover:text-yellow hover:bg-white/33 hover:text-shadow-[2px_2px_0px_#00000050]" : "brightness-75"}`}
                       onMouseEnter={(event) => {
                         gsap.to(event.target, {
                           scale: 1.02,
@@ -435,11 +436,16 @@ export default function ProductView({ cart, product }) {
                         });
                       }}
                       onClick={() => {
+                        if (!variant.availableForSale) {
+                          return;
+                        }
+
                         setCurrentVariant(variant);
                         setDropdownOpen(false);
                       }}
                     >
                       {variant.title}
+                      {variant.availableForSale ? "" : " (Sold Out)"}
                     </button>
                   );
                 })}

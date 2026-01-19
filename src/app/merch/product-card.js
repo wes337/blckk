@@ -13,6 +13,11 @@ export default function ProductCard({ product }) {
         className="relative flex flex-col items-center h-full"
         href={`/merch?product=${product.handle}`}
       >
+        {product.soldOut && (
+          <div className="absolute top-[80px] left-[60px] translate-[-50%] uppercase text-red text-shadow-[2px_2px_0_#00000090] text-[28px] whitespace-nowrap z-1">
+            Sold Out
+          </div>
+        )}
         <div className={`whitespace-nowrap ${longTitle ? "text-xs" : ""} z-1`}>
           {product.title}
         </div>
