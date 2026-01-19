@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
@@ -24,6 +24,7 @@ const HIDE_PRODUCT_ANIMATION_PARAMS = {
   translateY: "25%",
   translateX: "-50%",
   opacity: 0,
+  pointerEvents: "none",
 };
 
 export default function ProductView({ cart, product }) {
@@ -33,6 +34,7 @@ export default function ProductView({ cart, product }) {
   const [currentVariant, setCurrentVariant] = useState(null);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [showSizeError, setShowSizeError] = useState(false);
+  const previousProductRef = useRef(null);
 
   const show = () => {
     const from = HIDE_PRODUCT_ANIMATION_PARAMS;
@@ -90,9 +92,11 @@ export default function ProductView({ cart, product }) {
 
     if (product) {
       show();
-    } else {
+    } else if (previousProductRef.current) {
       hide();
     }
+
+    previousProductRef.current = product;
   }, [initialized, product]);
 
   useEffect(() => {
@@ -241,7 +245,11 @@ export default function ProductView({ cart, product }) {
         )}
       <div
         id="product-view"
-        className={`fixed h-auto sm:h-screen w-[95vw] md:w-[66vw] 3xl:w-[50vw] z-30 bg-gray pixel-corners-large p-2`}
+        className="fixed h-auto sm:h-screen w-[95vw] md:w-[66vw] 3xl:w-[50vw] z-30 bg-gray pixel-corners-large p-2"
+        style={{
+          opacity: 0,
+          pointerEvents: "none",
+        }}
       >
         <div className="h-full w-full pixel-corners-large bg-white overflow-y-auto pb-10">
           <div
