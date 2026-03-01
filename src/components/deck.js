@@ -5,7 +5,6 @@ import { usePathname, useRouter } from "next/navigation";
 import Image from "next/image";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { isLive } from "@/utils";
 
 export default function Deck({ amount = 10 }) {
   const container = useRef();
@@ -68,7 +67,7 @@ export default function Deck({ amount = 10 }) {
               }`}
               style={{ translate: `${index * 0.5}px ${index * -1}px` }}
               onClick={() => {
-                if (!isTopCard || !isLive()) {
+                if (!isTopCard) {
                   return;
                 }
 

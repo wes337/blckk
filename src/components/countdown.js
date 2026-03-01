@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { isLive } from "@/utils";
 import Box from "./box";
 
 const TARGET = Date.UTC(2026, 2, 4, 19, 0, 0);
@@ -15,6 +14,8 @@ function getTimeLeft() {
     seconds: Math.floor((diff / 1000) % 60),
   };
 }
+
+const isLive = () => true;
 
 export default function Countdown() {
   const [timeLeft, setTimeLeft] = useState(getTimeLeft);
