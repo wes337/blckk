@@ -2,6 +2,8 @@
 
 import { Suspense } from "react";
 import Image from "next/image";
+import { redirect } from "next/navigation";
+import { isLive } from "@/utils";
 import Shopify from "@/shopify";
 import Cards from "@/components/cards";
 import Card from "@/components/card";
@@ -19,6 +21,10 @@ const ENABLED =
 const products = await Shopify.getProducts();
 
 export default function MerchPage() {
+  if (!isLive()) {
+    redirect("/");
+  }
+
   return (
     <Suspense>
       <div className="fixed top-0 left-0 w-full h-full flex flex-col gap-8 items-center justify-center z-10">

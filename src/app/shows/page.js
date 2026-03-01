@@ -1,6 +1,8 @@
 "use client";
 
 import Image from "next/image";
+import { redirect } from "next/navigation";
+import { isLive } from "@/utils";
 import Card from "@/components/card";
 import Cards from "@/components/cards";
 import Footer from "@/components/footer";
@@ -8,6 +10,10 @@ import EmailForm from "@/components/email-form";
 import ShowsList from "./shows-list";
 
 export default function ShowsPage() {
+  if (!isLive()) {
+    redirect("/");
+  }
+
   return (
     <div className="fixed top-0 left-0 w-full h-full flex flex-col gap-8 items-center justify-center z-10">
       <div className="text-2xl text-shadow-[2px_2px_0px_#16232590] uppercase -mb-2">
