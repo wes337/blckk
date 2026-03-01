@@ -1,0 +1,18 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "main": ".open-next/worker.js",
+  "name": "blckk",
+  "compatibility_date": "2026-02-05",
+  "compatibility_flags": ["nodejs_compat"],
+  "account_id": "f67b3f6efce7533a40fdc1bc23e0494d",
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS",
+  },
+  "observability": {
+    "logs": {
+      "enabled": false,
+      "invocation_logs": true,
+    },
+  },
+}

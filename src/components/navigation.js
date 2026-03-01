@@ -5,7 +5,7 @@ import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { randomNumberBetween } from "@/utils";
+import { isLive, randomNumberBetween } from "@/utils";
 import ButtonLink from "@/components/button-link";
 import Box from "./box";
 
@@ -146,26 +146,28 @@ export default function Navigation() {
               priority
             />
           </button>
-          <div
-            className={`links w-full h-full ${
-              home ? "pointer-events-auto" : "pointer-events-none"
-            }`}
-          >
-            <Box
-              className={`flex w-[75vw] md:w-[33vw] flex-wrap xl:flex-nowrap m-auto md:m-0 items-center justify-between gap-4`}
+          {isLive() && (
+            <div
+              className={`links w-full h-full ${
+                home ? "pointer-events-auto" : "pointer-events-none"
+              }`}
             >
-              {LINKS.map(({ label, href, color }) => {
-                return (
-                  <ButtonLink
-                    key={href}
-                    label={label}
-                    color={color}
-                    href={href}
-                  />
-                );
-              })}
-            </Box>
-          </div>
+              <Box
+                className={`flex w-[75vw] md:w-[33vw] flex-wrap xl:flex-nowrap m-auto md:m-0 items-center justify-between gap-4`}
+              >
+                {LINKS.map(({ label, href, color }) => {
+                  return (
+                    <ButtonLink
+                      key={href}
+                      label={label}
+                      color={color}
+                      href={href}
+                    />
+                  );
+                })}
+              </Box>
+            </div>
+          )}
         </div>
       </div>
       <div

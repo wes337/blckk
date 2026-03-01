@@ -5,6 +5,7 @@ import { usePathname, useRouter } from "next/navigation";
 import Image from "next/image";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { isLive } from "@/utils";
 
 export default function Deck({ amount = 10 }) {
   const container = useRef();
@@ -32,7 +33,7 @@ export default function Deck({ amount = 10 }) {
           translateY: pathname === "/" ? "-186px" : "0px",
           ease: "elastic.inOut(1,0.5)",
           duration: 0.8,
-        }
+        },
       );
 
       const cards = gsap.utils.toArray(".deck-card");
@@ -45,7 +46,7 @@ export default function Deck({ amount = 10 }) {
         });
       });
     },
-    { dependencies: [pathname], scope: container }
+    { dependencies: [pathname], scope: container },
   );
 
   return (
@@ -67,7 +68,7 @@ export default function Deck({ amount = 10 }) {
               }`}
               style={{ translate: `${index * 0.5}px ${index * -1}px` }}
               onClick={() => {
-                if (!isTopCard) {
+                if (!isTopCard || !isLive()) {
                   return;
                 }
 

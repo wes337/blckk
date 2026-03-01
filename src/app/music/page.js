@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
+import { redirect } from "next/navigation";
+import { isLive } from "@/utils";
 import Card from "@/components/card";
 import Cards from "@/components/cards";
 import Footer from "@/components/footer";
@@ -32,6 +34,10 @@ const LINKS = [
 ];
 
 export default async function MusicPage() {
+  if (!isLive()) {
+    redirect("/");
+  }
+
   return (
     <div className="fixed top-0 left-0 flex flex-col gap-8 items-center justify-center w-full h-full m-auto z-10 overflow-auto">
       <div className="text-2xl text-shadow-[2px_2px_0px_#16232590] uppercase">
